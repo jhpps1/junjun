@@ -5,6 +5,9 @@ from .forms import CustomUserChangeForm
 
 # Create your views here.
 
+def sign_in(request):
+    return render(request, 'pages/sign_in.html')
+
 @login_required
 def profile_edit(request):
     if request.method == 'POST':
