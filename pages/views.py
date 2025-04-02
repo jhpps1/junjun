@@ -1,11 +1,24 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth import login, authenticate
 from django.contrib import messages
 from .forms import CustomUserChangeForm
 
 # Create your views here.
 
 def sign_in(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = authenticate(request, username=username, password=password)
+        
+        if user is not None:
+            login(request, user)
+            messages.success(request, '로그인되었습니다.')
+            return redirect('pages:profile_edit')
+        else:
+            messages.error(request, '아이디 또는 비밀번호가 올바르지 않습니다.')
+    
     return render(request, 'pages/sign_in.html')
 
 @login_required
