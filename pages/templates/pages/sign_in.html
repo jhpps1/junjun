@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -13,14 +14,51 @@
             color: white;
             min-height: 100vh;
             display: flex;
+            justify-content: center;
+        }
+
+        .page-container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            height: 100vh;
+            margin: 0 auto;
+        }
+
+        .image-section {
+            flex: 0 0 40%;
+            background-image: url('{% static "images/movie_cheetah.jpg" %}');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, rgba(27, 27, 27, 0) 0%, rgba(27, 27, 27, 0.8) 100%);
+        }
+
+        .login-section {
+            flex: 0 0 60%;
+            display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            position: relative;
         }
 
         .logo {
             padding: 20px;
             position: absolute;
             top: 0;
-            left: 0;
+            left: 40px;
         }
 
         .logo img {
@@ -28,9 +66,9 @@
         }
 
         .container {
+            width: 100%;
             max-width: 375px;
             margin: auto;
-            padding: 20px;
             text-align: center;
         }
 
@@ -143,35 +181,38 @@
     </style>
 </head>
 <body>
-    <div class="logo">
-        <img src="https://www.watcha.com/img/watcha_logo.png" alt="WATCHA">
-    </div>
-
-    <div class="container">
-        <form class="login-form" method="post">
-            {% csrf_token %}
-            <h2>로그인</h2>
-            
-            {% if messages %}
-            <div class="messages">
-                {% for message in messages %}
-                <div class="alert alert-{{ message.tags }}">
-                    {{ message }}
-                </div>
-                {% endfor %}
+    <div class="page-container">
+        <div class="image-section"></div>
+        <div class="login-section">
+            <div class="logo">
+                <img src="https://www.watcha.com/img/watcha_logo.png" alt="WATCHA">
             </div>
-            {% endif %}
 
-            <input type="text" name="username" class="input-field" placeholder="이메일 (example@gmail.com)" required>
-            <input type="password" name="password" class="input-field" placeholder="비밀번호" required>
-            <button type="submit" class="login-button">로그인</button>
-            
-            <div class="signup-link">
-                계정이 없으신가요? <a href="{% url 'pages:sign_up' %}">회원가입</a>
+            <div class="container">
+                <form class="login-form" method="post">
+                    {% csrf_token %}
+                    <h2>로그인</h2>
+                    
+                    {% if messages %}
+                    <div class="messages">
+                        {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }}">
+                            {{ message }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    <input type="text" name="username" class="input-field" placeholder="이메일 (example@gmail.com)" required>
+                    <input type="password" name="password" class="input-field" placeholder="비밀번호" required>
+                    <button type="submit" class="login-button">로그인</button>
+                    
+                    <div class="signup-link">
+                        계정이 없으신가요? <a href="{% url 'pages:sign_up' %}">회원가입</a>
+                    </div>
+                </form>
             </div>
-        </form>
-
-      
+        </div>
     </div>
 </body>
 </html>

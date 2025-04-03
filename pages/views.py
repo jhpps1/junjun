@@ -1,8 +1,10 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, authenticate
 from django.contrib import messages
+from django.contrib.auth.forms import PasswordChangeForm
 from .forms import CustomUserChangeForm, CustomUserCreationForm
+from .models import CustomUser
 
 # Create your views here.
 
@@ -48,3 +50,15 @@ def profile_edit(request):
         form = CustomUserChangeForm(instance=request.user)
     
     return render(request, 'pages/profile_edit.html', {'form': form})
+
+def password_change(request, user_pk):
+    user = get_object_or_404(CustomUser, pk=user_pk)
+    if request.method == 'POST':
+        form = PasswordChangeForm(user, request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('pages:profile_edit')
+    else:
+        form = PasswordChangeForm(user)
+    
+    return render(request, 'pages/password_change.html', {'form': form})

@@ -5,29 +5,24 @@ from django.core.exceptions import ValidationError
 from .models import CustomUser
 
 class CustomUserCreationForm(UserCreationForm):
-    email = forms.EmailField(required=True, label='이메일')
-    phone_number = forms.CharField(max_length=15, required=False, label='전화번호')
-    address = forms.CharField(widget=forms.Textarea, required=False, label='주소')
-    bio = forms.CharField(widget=forms.Textarea, required=False, label='자기소개')
+    email = forms.EmailField(required=True, label='Email')
+    phone_number = forms.CharField(max_length=15, required=False, label='Phone Number')
+    address = forms.CharField(widget=forms.Textarea, required=False, label='Address')
+    bio = forms.CharField(widget=forms.Textarea, required=False, label='Bio')
     
     password1 = forms.CharField(
-        label='비밀번호',
-        widget=forms.PasswordInput,
-        help_text='비밀번호는 다음 조건을 만족해야 합니다:'
-                 '• 8자 이상이어야 합니다.'
-                 '• 숫자로만 이루어질 수 없습니다.'
-                 '• 자주 사용되는 비밀번호는 사용할 수 없습니다.'
-                 '• 개인정보와 비슷한 비밀번호는 사용할 수 없습니다.'
-                 '• 비밀번호는 영문자, 숫자, 특수문자 조합으로 입력해주세요.'
+        label='Password',
+        widget=forms.PasswordInput,  
+        help_text='Your password must contain at least 8 characters.'
     )
     password2 = forms.CharField(
-        label='비밀번호 확인',
+        label='Password confirmation',
         widget=forms.PasswordInput,
-        help_text='비밀번호를 다시 입력해주세요.'
+        help_text='Enter the same password as before, for verification.'
     )
     username = forms.CharField(
-        label='아이디',
-        help_text='아이디는 15자 이하로 입력해주세요.<br>영문자, 숫자, @/./+/-/_ 만 사용 가능합니다.'
+        label='Username',
+        help_text='Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.'
     )
 
     class Meta:
@@ -39,20 +34,7 @@ class CustomUserCreationForm(UserCreationForm):
         try:
             validate_password(password1, self.instance)
         except ValidationError as error:
-            # 기본 영문 에러 메시지를 한글로 변환
-            korean_errors = []
-            for e in error:
-                if 'too similar to' in str(e):
-                    korean_errors.append('비밀번호가 개인정보와 너무 비슷합니다.')
-                elif 'too common' in str(e):
-                    korean_errors.append('너무 일반적인 비밀번호입니다.')
-                elif 'entirely numeric' in str(e):
-                    korean_errors.append('비밀번호는 숫자로만 이루어질 수 없습니다.')
-                elif 'too short' in str(e):
-                    korean_errors.append('비밀번호는 최소 8자 이상이어야 합니다.')
-                else:
-                    korean_errors.append(str(e))
-            raise ValidationError(korean_errors)
+            raise ValidationError(error)
         return password1
 
 class CustomUserChangeForm(UserChangeForm):
