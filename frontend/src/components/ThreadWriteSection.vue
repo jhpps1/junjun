@@ -10,7 +10,8 @@
 
 <script setup>
 import { ref } from 'vue'
-import axios from 'axios'
+import axios from '../axios.js'
+
 
 const title = ref('')
 const content = ref('')

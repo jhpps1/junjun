@@ -9,7 +9,8 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import axios from 'axios'
+import axios from '../axios.js'
+
 import UserBadge from './UserBadge.vue'
 
 const threads = ref([])
