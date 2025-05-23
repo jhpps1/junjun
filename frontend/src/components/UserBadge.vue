@@ -8,4 +8,5 @@
 </template>
 <script setup>
 defineProps(['user'])
+import axios from '../axios.js'
 </script>
