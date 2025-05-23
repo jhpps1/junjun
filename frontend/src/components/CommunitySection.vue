@@ -1,29 +1,42 @@
 <template>
-  <div class="flex flex-col gap-6 py-16">
-    <div
-      v-for="thread in threads"
-      :key="thread.id"
-      class="rounded-xl border px-8 py-6 bg-white"
-    >
-      <div class="flex items-center gap-3 mb-2">
-        <div class="w-8 h-8 rounded-full" :style="{ backgroundColor: thread.user.profile_color }"></div>
-        <span class="font-bold">{{ thread.user.username }}</span>
-      </div>
-      <div class="text-xl font-bold">{{ thread.title }}</div>
-      <div class="text-gray-700 mt-1">{{ thread.content }}</div>
-      <div class="text-xs mt-2 text-gray-400">{{ thread.created_at }}</div>
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- 글 작성 섹션 토글 버튼 -->
+    <div class="mb-8 text-center">
+      <button 
+        @click="showWriteForm = !showWriteForm"
+        class="px-6 py-3 bg-emerald-500 text-white font-semibold rounded-lg shadow-md hover:bg-emerald-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+      >
+        {{ showWriteForm ? '작성 취소' : '새 글 작성하기' }}
+      </button>
     </div>
+
+    <!-- 글 작성 폼 -->
+    <transition
+      enter-active-class="transition ease-out duration-300"
+      enter-from-class="opacity-0 transform -translate-y-4"
+      enter-to-class="opacity-100 transform translate-y-0"
+      leave-active-class="transition ease-in duration-200"
+      leave-from-class="opacity-100 transform translate-y-0"
+      leave-to-class="opacity-0 transform -translate-y-4"
+    >
+      <ThreadWriteSection v-if="showWriteForm" @thread-submitted="handleThreadSubmitted" class="mb-12" />
+    </transition>
+
+    <!-- 글 목록 -->
+    <ThreadList :key="threadListKey" />
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-import axios from 'axios'
+import { ref } from 'vue'
+import ThreadList from './ThreadList.vue'
+import ThreadWriteSection from './ThreadWriteSection.vue'
 
-const threads = ref([])
+const showWriteForm = ref(false)
+const threadListKey = ref(0) // 글 목록을 강제로 다시 렌더링하기 위한 키
 
-onMounted(async () => {
-  const res = await axios.get('/api/threads/')
-  threads.value = res.data.results ?? res.data
-})
+const handleThreadSubmitted = () => {
+  showWriteForm.value = false // 폼 숨기기
+  threadListKey.value++ // 글 목록 새로고침 (키 변경)
+}
 </script>

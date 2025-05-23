@@ -14,7 +14,7 @@ def calc_user_profile_color_mixed(user):
     relations = UserBookRelation.objects.filter(user=user)
     if not relations.exists():
         return "#CCCCCC"
-    weights = {'like': 2, 'read': 1}
+    weights = {'like': 1, 'read': 2}
     total_weight = 0
     sum_r = sum_g = sum_b = 0
     for rel in relations:

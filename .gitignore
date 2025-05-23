@@ -1,28 +1,74 @@
-# Node modules
-node_modules/
-
-# Build output
-dist/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
 build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Local env files
-.env
-.env.*
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
 
-# Log files
+# Node
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
 
-# VSCode settings
-.vscode/
-
-# Mac system files
+# Vue
 .DS_Store
+dist/
+dist-ssr/
+coverage/
+*.local
 
-# Windows system files
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.project
+.classpath
+.settings/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# System Files
+.DS_Store
 Thumbs.db
-
-# Python virtual environments
-venv/
-.venv/
