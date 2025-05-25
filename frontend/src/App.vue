@@ -8,10 +8,8 @@ import CommunitySection from './components/CommunitySection.vue'
 import LoginForm from './components/LoginForm.vue'
 import RegisterForm from './components/RegisterForm.vue'
 import HeroSection from './components/HeroSection.vue'
-import CategoryList from './components/CategoryList.vue'
-import UserBadge from './components/UserBadge.vue'
-import ThreadList from './components/ThreadList.vue'
-// ProfileSection 등도 원하면 추가 가능
+import ThreadWriteSection from './components/ThreadWriteSection.vue'
+import ProfileSection from './components/ProfileSection.vue' 
 
 const user = ref(null)
 const currentView = ref('main') // 'main', 'login', 'register', 'profile'
@@ -34,7 +32,6 @@ function logout() {
   window.location.reload()
 }
 
-// 아래 함수들은 버튼에서 호출(네비게이션 클릭 등)
 function showLogin() {
   currentView.value = 'login'
 }
@@ -44,6 +41,9 @@ function showRegister() {
 function showMain() {
   currentView.value = 'main'
 }
+function showProfile() {
+  currentView.value = 'profile'
+}
 function scrollToSection(id) {
   const el = document.getElementById(id)
   if (el) el.scrollIntoView({ behavior: "smooth", block: "start" })
@@ -52,13 +52,14 @@ function scrollToSection(id) {
 
 <template>
   <NavBar />
-  
+
   <HeroSection @scrollTo="scrollToSection" />
 
   <!-- 로그인/회원가입/상태관리 상단바 -->
   <div class="flex justify-end p-4 gap-4 bg-gray-100">
     <template v-if="user">
       <span>{{ user.username }}님</span>
+      <button @click="showProfile" class="px-3 py-1 bg-indigo-300 text-white rounded">마이페이지</button>
       <button @click="logout" class="px-3 py-1 bg-gray-400 text-white rounded">로그아웃</button>
     </template>
     <template v-else>
@@ -68,12 +69,16 @@ function scrollToSection(id) {
     <button v-if="currentView !== 'main'" @click="showMain" class="px-3 py-1 ml-4 bg-gray-200 rounded">← 돌아가기</button>
   </div>
 
-  <!-- 뷰 전환 -->
+  <!-- 뷰 전환: 로그인/회원가입/마이페이지 -->
   <div v-if="currentView === 'login'">
     <LoginForm @login-success="() => { fetchMe(); showMain(); }" />
   </div>
   <div v-else-if="currentView === 'register'">
     <RegisterForm @register-success="showLogin" />
+  </div>
+  <div v-else-if="currentView === 'profile'">
+    <!-- 프로필 컬러 변경시 color-change 이벤트를 받아서 처리 -->
+    <ProfileSection @color-change="handleColorChange" />
   </div>
 
   <!-- 메인(슬라이드/섹션) -->
@@ -88,10 +93,12 @@ function scrollToSection(id) {
     </section>
     <section id="section-3" class="min-h-[80vh] bg-[#F9F5FF]">
       <h1 class="text-3xl font-bold text-center py-10">3. 추천도서 영역</h1>
-      <BookRecommendSection />
+      <!--키 바뀌면 새로 렌더댐-->
+      <BookRecommendSection :key="bookRecKey"/>
     </section>
     <section id="section-4" class="min-h-[80vh] bg-[#FFF7F0]">
       <h1 class="text-3xl font-bold text-center py-10">4. 커뮤니티</h1>
+      <ThreadWriteSection />
       <CommunitySection />
     </section>
     <!-- ...필요시 추가 -->

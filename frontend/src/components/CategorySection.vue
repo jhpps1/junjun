@@ -3,7 +3,7 @@
     <div
       v-for="cat in categories"
       :key="cat.id"
-      class="p-6 min-w-[120px] min-h-[80px] rounded-2xl shadow-md font-bold text-lg flex flex-col items-center justify-center hover:scale-105 transition"
+      class="p-6 min-w-[120px] min-h-[80px] rounded-full w-28 h-28 shadow-md font-bold text-lg flex flex-col items-center justify-center hover:scale-105 transition hover:shadow-xl hover:scale-110 transition"
       :style="{ backgroundColor: cat.color, color: getTextColor(cat.color) }"
     >
       <span class="mb-1">{{ cat.name }}</span>
