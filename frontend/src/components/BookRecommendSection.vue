@@ -126,6 +126,20 @@
       <span v-if="!oppositeBooks.length" class="text-gray-400">추천 책이 없습니다.</span>
     </div>
   </div>
+
+  <div class="container my-4" id="recommend">
+    <h2 class="fw-bold mb-3">추천도서</h2>
+    <div class="row g-3">
+      <div v-for="rec in recommends" :key="rec.id" class="col-12 col-md-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ rec.title }}</h5>
+            <p class="card-text">{{ rec.desc }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -139,6 +153,7 @@ const similarUser = ref(null)
 const oppositeUser = ref(null)
 const myColor = ref('#cccccc')
 const popupUser = ref(null)
+const recommends = ref([])
 
 // 현재 로그인 유저의 찜/읽음 목록
 const likes = ref([])
@@ -174,6 +189,10 @@ async function fetchAll() {
       book.isRead = reads.value.includes(book.id)
     }
   }
+
+  // 추천 도서 섹션 데이터 가져오기
+  const resRecommends = await axios.get('/api/books/recommendations/')
+  recommends.value = resRecommends.data || []
 }
 
 onMounted(fetchAll)

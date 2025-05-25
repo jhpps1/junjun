@@ -1,16 +1,13 @@
 <template>
-  <div class="grid grid-cols-2 gap-4">
-    <div
-      v-for="book in books"
-      :key="book.id"
-      class="p-4 rounded-2xl shadow flex flex-col"
-      :style="{ borderLeft: `10px solid ${book.color}` }"
-    >
-      <div class="font-bold text-lg">{{ book.title }}</div>
-      <div class="text-xs mb-2">{{ book.author }}</div>
-      <span class="px-2 py-1 rounded bg-gray-100 text-xs" :style="{ color: book.color }">
-        {{ book.category?.name }}
-      </span>
+  <div class="container my-4" id="popular">
+    <h2 class="fw-bold mb-3">인기도서</h2>
+    <div class="d-flex overflow-auto gap-3 pb-2">
+      <div v-for="book in books" :key="book.id" class="card" style="min-width: 140px;">
+        <img :src="book.cover" class="card-img-top" alt="..." />
+        <div class="card-body p-2">
+          <h6 class="card-title mb-1">{{ book.title }}</h6>
+        </div>
+      </div>
     </div>
   </div>
 </template>
