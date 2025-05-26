@@ -18,6 +18,7 @@ class BookSerializer(serializers.ModelSerializer):
 class UserBookRelationSerializer(serializers.ModelSerializer):
     user = serializers.HiddenField(default=serializers.CurrentUserDefault())
     book_detail = serializers.SerializerMethodField(read_only=True)
+
     class Meta:
         model = UserBookRelation
         fields = ['id', 'user', 'book', 'status', 'created_at', 'book_detail']

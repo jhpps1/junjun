@@ -14,8 +14,14 @@ class Book(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     color = models.CharField(max_length=7)  # 카테고리 color 복사 or 커스텀
 
+    def save(self, *args, **kwargs):
+        if not self.color:
+            self.color = self.category.color
+        super().save(*args, **kwargs)
+
     def __str__(self):
         return self.title
+
 
 class UserBookRelation(models.Model):
     STATUS_CHOICES = (

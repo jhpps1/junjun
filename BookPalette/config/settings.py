@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'accounts',
-    'books.apps.BooksConfig',
+    'books',
     'community',
     'django.contrib.admin',
     'django.contrib.auth',
