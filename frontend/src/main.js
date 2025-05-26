@@ -1,16 +1,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap'
-import { BootstrapVueNext } from 'bootstrap-vue-next'
-import 'bootstrap-vue-next/dist/bootstrap-vue-next.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import App from './App.vue'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+import App from './App.vue'
 
+// 1. 앱 생성
 const app = createApp(App)
+
+// 2. Pinia 생성 및 플러그인 등록
 const pinia = createPinia()
 pinia.use(piniaPluginPersistedstate)
 app.use(pinia)
-app.use(BootstrapVueNext)
+
+// 3. 앱 마운트
 app.mount('#app')
