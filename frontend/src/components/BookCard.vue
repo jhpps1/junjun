@@ -1,57 +1,58 @@
+<!-- src/components/BookCard.vue -->
 <template>
   <div class="card h-100">
     <div class="card-body">
-      <div class="text-center mb-2">
-        <i class="bi bi-book" style="font-size: 2rem;"></i>
-      </div>
-      <div class="text-muted small">작가 {{ book.author }}</div>
-      <div class="fw-bold h5 mt-2">{{ book.title }}</div>
-      <div class="d-flex align-items-center justify-content-between mt-2">
-        <span class="text-success fw-bold">100%</span>
-        <span class="text-muted small">댓글 {{ comments.length }}개</span>
-      </div>
+      <div class="fw-bold h5">{{ book.title }}</div>
+      <div class="text-muted small">저자 {{ book.author }}</div>
     </div>
-    <div class="card-footer text-center small">
-      <button
-        class="btn btn-outline-secondary btn-sm me-2"
-        @click="prevComment"
-        :disabled="currentComment === 0"
-      >↑</button>
-      <transition name="fade" mode="out-in">
-        <span v-if="comments.length" :key="currentComment">
-          {{ comments[currentComment] }}
-        </span>
-        <span v-else>댓글 없음</span>
-      </transition>
-      <button
-        class="btn btn-outline-secondary btn-sm ms-2"
-        @click="nextComment"
-        :disabled="currentComment === comments.length - 1"
-      >↓</button>
+    <div class="card-footer text-center small" style="height: 2.5rem; overflow: hidden;">
+      <transition-group name="comment-slide" tag="div">
+        <div :key="currentCommentIdx" class="comment-slide">
+          "{{ book.comments[currentCommentIdx] }}"
+        </div>
+      </transition-group>
     </div>
   </div>
 </template>
-
 <script setup>
-import { ref, computed } from 'vue'
-const props = defineProps({
-  book: { type: Object, required: true }
-})
-const comments = computed(() => props.book.comments || [])
-const currentComment = ref(0)
-function prevComment() {
-  if (currentComment.value > 0) currentComment.value--
-}
-function nextComment() {
-  if (currentComment.value < comments.value.length - 1) currentComment.value++
-}
-</script>
+import { ref, onMounted, onUnmounted, watch } from 'vue'
+const props = defineProps({ book: Object })
 
+const currentCommentIdx = ref(0)
+let interval = null
+
+onMounted(() => {
+  if (props.book.comments && props.book.comments.length > 1) {
+    interval = setInterval(() => {
+      currentCommentIdx.value = (currentCommentIdx.value + 1) % props.book.comments.length
+    }, 2000)
+  }
+})
+onUnmounted(() => clearInterval(interval))
+watch(() => props.book, () => { currentCommentIdx.value = 0 })
+</script>
 <style scoped>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.4s;
+.comment-slide {
+  transition: all 0.5s;
 }
-.fade-enter-from, .fade-leave-to {
+.comment-slide-leave-active,
+.comment-slide-enter-active {
+  transition: all 0.5s;
+}
+.comment-slide-enter-from {
   opacity: 0;
+  transform: translateY(1rem);
+}
+.comment-slide-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+.comment-slide-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+.comment-slide-leave-to {
+  opacity: 0;
+  transform: translateY(-1rem);
 }
 </style>

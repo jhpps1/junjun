@@ -11,16 +11,15 @@ class Category(models.Model):
 class Book(models.Model):
     title = models.CharField(max_length=200)
     author = models.CharField(max_length=100)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    color = models.CharField(max_length=7)  # 카테고리 color 복사 or 커스텀
-
-    def save(self, *args, **kwargs):
-        if not self.color:
-            self.color = self.category.color
-        super().save(*args, **kwargs)
+    category = models.ForeignKey('Category', on_delete=models.CASCADE)
+    cover = models.URLField(max_length=300, blank=True, null=True)    
+    summary = models.TextField(blank=True, null=True)
+    published_date = models.DateField(blank=True, null=True)
+    isbn = models.CharField(max_length=20, unique=True, blank=True, null=True) 
 
     def __str__(self):
         return self.title
+
 
 
 class UserBookRelation(models.Model):
@@ -39,4 +38,11 @@ class UserBookRelation(models.Model):
     def __str__(self):
         return f"{self.user.username} - {self.book.title} ({self.get_status_display()})"
     
+
+class BookComment(models.Model):
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='comments')
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    content = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     

@@ -1,42 +1,94 @@
 <template>
-  <section id="popular" class="container py-5">
-    <h2 class="fw-bold">인기도서</h2>
-    <p class="text-muted">금주의 인기 도서를 알아보세요</p>
-    <div class="d-flex align-items-center">
-      <button class="btn btn-outline-secondary me-2" @click="prev">
-        <i class="bi bi-arrow-left"></i>
-      </button>
-      <div class="flex-grow-1">
-        <div class="row row-cols-1 row-cols-md-4 g-3">
-          <BookCard
-            v-for="book in visibleBooks"
-            :key="book.id"
-            :book="book"
-          />
+  <section id="popular" class="container py-5 border-bottom">
+    <h2 class="mb-4 fw-bold">인기도서</h2>
+
+    <!-- 1. 로딩 중 -->
+    <div v-if="loading" class="text-center my-5">로딩중...</div>
+    <!-- 2. 데이터 없음 -->
+    <div v-else-if="books.length === 0" class="text-center my-5 text-secondary">
+      인기도서 데이터가 없습니다.
+    </div>
+    <!-- 3. 정상 데이터 -->
+    <div v-else class="position-relative">
+      <div class="d-flex overflow-hidden" style="height: 240px;">
+        <div
+          class="d-flex transition"
+          :style="{
+            transform: `translateX(-${currentIdx * (100 / showCount)}%)`,
+            transition: 'transform 0.6s cubic-bezier(.6,.18,.38,.96)'
+          }"
+          style="min-width:100%;"
+        >
+          <div
+            v-for="(book, idx) in visibleBooks"
+            :key="book?.id || idx"
+            class="flex-shrink-0 px-2"
+            style="width: 260px; min-width:260px;"
+          >
+            <BookCard v-if="book" :book="book" />
+          </div>
         </div>
       </div>
-      <button class="btn btn-outline-secondary ms-2" @click="next">
-        <i class="bi bi-arrow-right"></i>
-      </button>
-    </div>
-    <div class="d-flex justify-content-end mt-2">
-      <button class="btn btn-dark btn-sm me-2">더보기</button>
-      <button class="btn btn-outline-dark btn-sm"><i class="bi bi-three-dots"></i></button>
     </div>
   </section>
 </template>
+
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+import axios from 'axios'
 import BookCard from '@/components/BookCard.vue'
-const books = ref([
-  { id: 1, title: '미움받을 용기', author: '기시미 이치로', comments: ['정말 좋아요', '추천합니다'] },
-  { id: 2, title: '죽고 싶지만 떡볶이는 먹고 싶어', author: '백세희', comments: ['마음에 와닿는 책', '위로가 되었어요'] },
-  { id: 3, title: '데미안', author: '헤르만 헤세', comments: ['철학적인 책', '다시 읽고 싶은 책'] },
-  { id: 4, title: '자존감 수업', author: '윤홍균', comments: ['자존감 UP!', '좋은 조언이 많아요'] }
-])
-const start = ref(0)
-const showCount = 4
-const visibleBooks = computed(() => books.value.slice(start.value, start.value + showCount))
-function prev() { if (start.value > 0) start.value-- }
-function next() { if (start.value + showCount < books.value.length) start.value++ }
+
+const books = ref([])
+const loading = ref(true)
+const showCount = 3
+const currentIdx = ref(0)
+
+// visibleBooks: books가 비어있을 때 안전하게 처리
+const visibleBooks = computed(() => {
+  if (!books.value.length) return []
+  const arr = []
+  for (let i = 0; i < showCount; i++) {
+    arr.push(books.value[(currentIdx.value + i) % books.value.length])
+  }
+  return arr
+})
+
+let interval = null
+
+onMounted(async () => {
+  loading.value = true
+  try {
+    // 1️⃣ 인기순 도서 API 호출
+    const res = await axios.get('http://localhost:8000/api/books/popular/')
+    // 실제 응답이 배열인지 확인하고 보정
+    if (Array.isArray(res.data)) {
+      books.value = res.data.map(book => ({
+        ...book,
+        comments: book.comments && book.comments.length ? book.comments : ['아직 댓글 없음']
+      }))
+    } else if (Array.isArray(res.data.results)) {
+      books.value = res.data.results.map(book => ({
+        ...book,
+        comments: book.comments && book.comments.length ? book.comments : ['아직 댓글 없음']
+      }))
+    } else {
+      books.value = []
+    }
+    // 2️⃣ 캐러셀 자동 순환
+    if (books.value.length > 0) {
+      interval = setInterval(() => {
+        currentIdx.value = (currentIdx.value + 1) % books.value.length
+      }, 2500)
+    }
+  } catch (err) {
+    alert('인기도서 데이터를 불러올 수 없습니다.')
+    books.value = []
+  } finally {
+    loading.value = false
+  }
+})
+
+onUnmounted(() => {
+  if (interval) clearInterval(interval)
+})
 </script>

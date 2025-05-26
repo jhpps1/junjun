@@ -7,6 +7,7 @@ export const useUserStore = defineStore('user', {
     user: null,
     error: null,
   }),
+  persist: true,
   actions: {
     async login(username, password) {
       try {

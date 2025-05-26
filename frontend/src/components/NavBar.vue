@@ -1,7 +1,14 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">BookPalette</a>
+      <!-- BookPalette 로고: 클릭시 홈 이동 -->
+      <a
+        class="navbar-brand fw-bold"
+        style="cursor:pointer"
+        @click="goHome"
+      >
+        BookPalette
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -26,12 +33,24 @@
           </li>
         </ul>
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <router-link to="/login" class="nav-link">로그인</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/register" class="nav-link">회원가입</router-link>
-          </li>
+          <template v-if="!userStore.isLoggedIn">
+            <li class="nav-item">
+              <span class="nav-link" style="cursor:pointer" @click="$emit('show-login')">로그인</span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-link" style="cursor:pointer" @click="$emit('show-register')">회원가입</span>
+            </li>
+          </template>
+          <template v-else>
+            <li class="nav-item">
+              <span class="nav-link" style="cursor:pointer" @click="handleLogout">로그아웃</span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-link" style="cursor:pointer" @click="goProfile">
+                {{ userStore.user?.username || '내 정보' }}
+              </span>
+            </li>
+          </template>
         </ul>
       </div>
     </div>
@@ -46,10 +65,19 @@ const router = useRouter()
 
 function handleLogout() {
   userStore.logout()
-  router.push('/login')
+  // 필요시 새로고침이나 홈 이동
+  router.push('/')
 }
 function scrollTo(section) {
   const el = document.getElementById(section)
   if (el) el.scrollIntoView({ behavior: 'smooth' })
 }
+function goProfile() {
+  router.push('/profile')
+}
+// ★ 로고 클릭 → 홈 이동
+function goHome() {
+  router.push('/')
+}
+defineEmits(['show-login', 'show-register'])
 </script>

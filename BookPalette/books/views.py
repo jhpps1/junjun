@@ -7,6 +7,7 @@ from .models import Category, Book, UserBookRelation
 from .serializers import CategorySerializer, BookSerializer, UserBookRelationSerializer
 from .utils import hex_to_rgb, color_distance
 from accounts.models import User
+from django.db.models import Count, Q
 
 # ===== 카테고리 목록 조회 =====
 class CategoryViewSet(viewsets.ReadOnlyModelViewSet):
@@ -101,3 +102,23 @@ def recommend_similar_books(request):
         data['opposite'] = []
 
     return Response(data)
+
+@api_view(['GET'])
+def popular_books(request):
+    # 1. 좋아요/읽음 합산으로 인기순 10권 추출
+    books = Book.objects.annotate(
+        like_count=Count('userbookrelation', filter=Q(userbookrelation__status='like')),
+        read_count=Count('userbookrelation', filter=Q(userbookrelation__status='read')),
+        total=Count('userbookrelation', filter=Q(userbookrelation__status='like') | Q(userbookrelation__status='read')),
+    ).order_by('-total', '-pk')[:10]
+    books = list(books)
+    
+    # 2. 10권 미만이면, 임의의 Book으로 채움 (중복X)
+    if len(books) < 10:
+        exclude_pks = [b.pk for b in books]
+        additional = Book.objects.exclude(pk__in=exclude_pks).order_by('-pk')[:10 - len(books)]
+        books += list(additional)
+    
+    # 3. 직렬화 및 응답
+    serializer = BookSerializer(books, many=True)
+    return Response(serializer.data)

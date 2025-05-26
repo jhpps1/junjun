@@ -11,9 +11,16 @@ class BookSerializer(serializers.ModelSerializer):
     category_id = serializers.PrimaryKeyRelatedField(
         queryset=Category.objects.all(), source='category', write_only=True
     )
+    comments = serializers.SerializerMethodField()
+
     class Meta:
         model = Book
-        fields = ['id', 'title', 'author', 'category', 'category_id', 'color']
+        fields = ['id', 'title', 'author', 'category', 'category_id', 'color', 'comments']
+
+    def get_comments(self, obj):
+        # BookComment 모델 사용
+        return [c.content for c in obj.comments.all()]
+
 
 class UserBookRelationSerializer(serializers.ModelSerializer):
     user = serializers.HiddenField(default=serializers.CurrentUserDefault())
