@@ -12,7 +12,7 @@ class Category(models.Model):
 class Book(models.Model):
     title = models.CharField(max_length=200)
     author = models.CharField(max_length=100)
-    category = models.ForeignKey('Category', on_delete=models.CASCADE)
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.CASCADE)
     cover = models.URLField(max_length=300, blank=True, null=True)    
     summary = models.TextField(blank=True, null=True)
     published_date = models.DateField(blank=True, null=True)
