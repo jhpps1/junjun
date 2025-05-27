@@ -1,62 +1,73 @@
 <template>
-  <section class="popular-section">
-    <h2 class="section-title">인기도서</h2>
-    <p class="section-desc">금주의 인기 도서를 알아보세요</p>
-    <div class="carousel">
-      <button class="arrow-btn" @click="prev">&#8592;</button>
-      <div class="cards">
-        <BookCard v-for="book in visibleBooks" :key="book.id" :book="book" />
+  <section class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="fw-bold mb-0">인기 도서</h2>
+      <span class="fs-5 text-success fw-bold">+100%</span>
+    </div>
+    <div id="popularBooksCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div 
+          class="carousel-item"
+          :class="{ active: idx === 0 }"
+          v-for="(slide, idx) in slideChunks"
+          :key="idx"
+        >
+          <div class="row g-3">
+            <div 
+              class="col-md-3" 
+              v-for="book in slide"
+              :key="book.id"
+            >
+              <!-- Book 카드 시작 -->
+              <div class="card shadow-sm h-100 border border-2 border-dark">
+                <div class="card-body pb-0">
+                  <h5 class="card-title fw-bold">{{ book.title }}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">{{ book.author }}</h6>
+                  <p class="card-text small text-truncate">{{ book.description }}</p>
+                </div>
+                <!-- 선(구분선) -->
+                <hr class="m-0 border-2 border-dark" />
+                <div class="card-footer bg-white border-top-0 pt-2 pb-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="small">댓글 {{ book.comments_count ?? 0 }}</span>
+                    <span class="small text-secondary">평점 {{ book.rating ?? '-' }}</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Book 카드 끝 -->
+            </div>
+          </div>
+        </div>
       </div>
-      <button class="arrow-btn" @click="next">&#8594;</button>
+      <button class="carousel-control-prev" type="button" data-bs-target="#popularBooksCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#popularBooksCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
   </section>
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
-import axios from 'axios'
-import BookCard from '@/components/BookCard.vue'
+import { ref, onMounted, computed } from 'vue'
+// fetchPopularBooks 함수는 기존 api.js 또는 axios 파일에서 import
+import { fetchPopularBooks } from '@/api/api' // 실제 경로에 맞게 수정
 
 const books = ref([])
-const currentIdx = ref(0)
-const showCount = 4
-
-const visibleBooks = computed(() => {
-  const arr = []
-  for (let i = 0; i < showCount; i++) {
-    arr.push(books.value[(currentIdx.value + i) % books.value.length])
-  }
-  return arr
-})
 
 onMounted(async () => {
-  const res = await axios.get('http://localhost:8000/api/books/popular/')
-  books.value = res.data
+  const { data } = await fetchPopularBooks()
+  books.value = data
 })
 
-function prev() {
-  currentIdx.value = (currentIdx.value - 1 + books.value.length) % books.value.length
-}
-function next() {
-  currentIdx.value = (currentIdx.value + 1) % books.value.length
-}
+// 4개씩 슬라이드로 묶는 함수
+const slideChunks = computed(() => {
+  const chunkSize = 4
+  const chunks = []
+  for(let i = 0; i < books.value.length; i += chunkSize) {
+    chunks.push(books.value.slice(i, i + chunkSize))
+  }
+  return chunks
+})
 </script>
-
-<style scoped>
-.popular-section { margin: 2rem 0; }
-.section-title { font-size: 2rem; font-weight: 700; }
-.section-desc { font-size: 1rem; color: #333; margin-bottom: 1.2rem; }
-.carousel { display: flex; align-items: center; justify-content: center; }
-.cards {
-  display: flex; gap: 2rem;
-}
-.arrow-btn {
-  border: 1px solid #111;
-  background: #fff;
-  font-size: 1.2rem;
-  width: 40px; height: 40px; border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.1s;
-}
-.arrow-btn:hover { background: #f5f5f5; }
-</style>
