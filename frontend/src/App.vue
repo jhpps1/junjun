@@ -10,42 +10,6 @@
   <RegisterModal v-if="showRegister" @close="showRegister = false" @switch-login="switchToLogin" />
 </template>
 
-<style>
-/* 1. html, body, #app 전체 높이 설정 */
-html, body, #app {
-  min-height: 100vh;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/* 2. body에 배경 이미지 적용 (cover/center/fixed) */
-body {
-  background-image: url('/bg.png');
-  background-size: 80%;
-  background-position: center 70px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-@media (max-width: 900px) {
-  body {
-    background-size: 120%;
-    background-position: center 40px;
-  }
-}
-@media (max-width: 600px) {
-  body {
-    background-size: 180%;
-    background-position: center 10px;
-  }
-}
-
-/* 선택: App.vue의 #app에도 추가로 적용해도 무방 */
-#app {
-  min-height: 100vh;
-}
-</style>
-
 <script setup>
 import { ref } from 'vue'
 import NavBar from './components/NavBar.vue'
