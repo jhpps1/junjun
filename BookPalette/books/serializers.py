@@ -15,7 +15,7 @@ class BookSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Book
-        fields = ['id', 'title', 'author', 'category', 'category_id', 'comments']
+        fields = "__all__"
 
     def get_comments(self, obj):
         # BookComment 모델 사용

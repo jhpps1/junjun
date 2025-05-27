@@ -1,58 +1,59 @@
-<!-- src/components/BookCard.vue -->
 <template>
-  <div class="card h-100">
-    <div class="card-body">
-      <div class="fw-bold h5">{{ book.title }}</div>
-      <div class="text-muted small">저자 {{ book.author }}</div>
+  <div class="book-card">
+    <img v-if="book.cover" :src="book.cover" class="book-cover" alt="책커버" />
+    <div v-else class="cover-placeholder">[책 아이콘]</div>
+    <div class="author">작가<br>{{ book.author }}</div>
+    <div class="title-row">
+      <span class="title">{{ book.title }}</span>
+      <span class="cat-badge" :style="{ background: book.category.color }">
+        {{ book.category.name }}
+      </span>
     </div>
-    <div class="card-footer text-center small" style="height: 2.5rem; overflow: hidden;">
-      <transition-group name="comment-slide" tag="div">
-        <div :key="currentCommentIdx" class="comment-slide">
-          "{{ book.comments[currentCommentIdx] }}"
-        </div>
-      </transition-group>
-    </div>
+    <div class="divider"></div>
+    <div class="comment-row">댓글 {{ book.comments.length }}개 캐러셀</div>
   </div>
 </template>
+
 <script setup>
-import { ref, onMounted, onUnmounted, watch } from 'vue'
-const props = defineProps({ book: Object })
-
-const currentCommentIdx = ref(0)
-let interval = null
-
-onMounted(() => {
-  if (props.book.comments && props.book.comments.length > 1) {
-    interval = setInterval(() => {
-      currentCommentIdx.value = (currentCommentIdx.value + 1) % props.book.comments.length
-    }, 2000)
-  }
-})
-onUnmounted(() => clearInterval(interval))
-watch(() => props.book, () => { currentCommentIdx.value = 0 })
+defineProps({ book: Object })
 </script>
+
 <style scoped>
-.comment-slide {
-  transition: all 0.5s;
+.book-card {
+  width: 210px; min-height: 265px;
+  border: 1.5px solid #111; border-radius: 8px;
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: flex-start;
+  background: #fff;
+  font-family: 'SUIT', sans-serif;
 }
-.comment-slide-leave-active,
-.comment-slide-enter-active {
-  transition: all 0.5s;
+.book-cover, .cover-placeholder {
+  width: 48px; height: 48px; margin: 1.5rem auto 1rem auto;
+  display: block;
 }
-.comment-slide-enter-from {
-  opacity: 0;
-  transform: translateY(1rem);
+.cover-placeholder { background: #eee; border-radius: 8px; color: #999; display: flex; align-items: center; justify-content: center; }
+.author { font-size: 1rem; color: #222; margin-bottom: 0.3rem; }
+.title-row {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
 }
-.comment-slide-enter-to {
-  opacity: 1;
-  transform: translateY(0);
+.title {
+  font-size: 1.2rem; font-weight: bold; color: #111;
 }
-.comment-slide-leave-from {
-  opacity: 1;
-  transform: translateY(0);
+.cat-badge {
+  padding: 0.16em 0.75em;
+  border-radius: 10px;
+  color: #111;
+  font-size: 0.92rem;
+  font-weight: 500;
+  border: 1.5px solid #222;
+  background: #f7f7f7;
 }
-.comment-slide-leave-to {
-  opacity: 0;
-  transform: translateY(-1rem);
+.divider {
+  width: 95%; border-bottom: 1.5px solid #111; margin: 10px 0;
+}
+.comment-row {
+  font-size: 0.95rem; color: #555; margin-bottom: 1rem;
 }
 </style>
