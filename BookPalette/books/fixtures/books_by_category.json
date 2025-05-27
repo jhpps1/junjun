@@ -19,7 +19,7 @@
   "model": "books.category",
   "pk": 3,
   "fields": {
-    "name": "ELT/¾îÇÐ/»çÀü",
+    "name": "ELT/ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½",
     "color": "#DA4F3E"
   }
 },
@@ -59,7 +59,7 @@
   "model": "books.category",
   "pk": 8,
   "fields": {
-    "name": "S.F/ÆÇÅ¸Áö",
+    "name": "S.F/ï¿½ï¿½Å¸ï¿½ï¿½",
     "color": "#DA793E"
   }
 },
@@ -67,7 +67,7 @@
   "model": "books.category",
   "pk": 9,
   "fields": {
-    "name": "TV ½Ã¸®Áî",
+    "name": "TV ï¿½Ã¸ï¿½ï¿½ï¿½",
     "color": "#DA813E"
   }
 },
@@ -83,7 +83,7 @@
   "model": "books.category",
   "pk": 11,
   "fields": {
-    "name": "VHS (ºñµð¿ÀÅ×ÀÌÇÁ)",
+    "name": "VHS (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)",
     "color": "#DA923E"
   }
 },
@@ -91,7 +91,7 @@
   "model": "books.category",
   "pk": 12,
   "fields": {
-    "name": "°¡°Ý´ëº° eBook",
+    "name": "ï¿½ï¿½ï¿½Ý´ëº° eBook",
     "color": "#DA9B3E"
   }
 },
@@ -99,7 +99,7 @@
   "model": "books.category",
   "pk": 13,
   "fields": {
-    "name": "°¡¿ä",
+    "name": "ï¿½ï¿½ï¿½ï¿½",
     "color": "#DAA33E"
   }
 },
@@ -107,7 +107,7 @@
   "model": "books.category",
   "pk": 14,
   "fields": {
-    "name": "°¡Á¤/¿ä¸®/ºäÆ¼",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½ä¸®/ï¿½ï¿½Æ¼",
     "color": "#DAAB3E"
   }
 },
@@ -115,7 +115,7 @@
   "model": "books.category",
   "pk": 15,
   "fields": {
-    "name": "°¡Á¤/¿ø¿¹/ÀÎÅ×¸®¾î",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½×¸ï¿½ï¿½ï¿½",
     "color": "#DAB43E"
   }
 },
@@ -123,7 +123,7 @@
   "model": "books.category",
   "pk": 16,
   "fields": {
-    "name": "°¡Á·/°ü°è",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½",
     "color": "#DABC3E"
   }
 },
@@ -131,7 +131,7 @@
   "model": "books.category",
   "pk": 17,
   "fields": {
-    "name": "°Ç°­/½ºÆ÷Ã÷",
+    "name": "ï¿½Ç°ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#DAC53E"
   }
 },
@@ -139,7 +139,7 @@
   "model": "books.category",
   "pk": 18,
   "fields": {
-    "name": "°Ç°­/Ãë¹Ì/·¹Àú",
+    "name": "ï¿½Ç°ï¿½/ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½",
     "color": "#DACD3E"
   }
 },
@@ -147,7 +147,7 @@
   "model": "books.category",
   "pk": 19,
   "fields": {
-    "name": "°ÇÃà/µðÀÚÀÎ",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#DAD63E"
   }
 },
@@ -155,7 +155,7 @@
   "model": "books.category",
   "pk": 20,
   "fields": {
-    "name": "°ÔÀÓ/ÅäÀÌ",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½",
     "color": "#D6DA3E"
   }
 },
@@ -163,7 +163,7 @@
   "model": "books.category",
   "pk": 21,
   "fields": {
-    "name": "°æÁ¦°æ¿µ",
+    "name": "ï¿½ï¿½ï¿½ï¿½ï¿½æ¿µ",
     "color": "#CDDA3E"
   }
 },
@@ -171,7 +171,7 @@
   "model": "books.category",
   "pk": 22,
   "fields": {
-    "name": "°íµîÇÐ±³Âü°í¼­",
+    "name": "ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#C5DA3E"
   }
 },
@@ -179,7 +179,7 @@
   "model": "books.category",
   "pk": 23,
   "fields": {
-    "name": "°íÀü",
+    "name": "ï¿½ï¿½ï¿½ï¿½",
     "color": "#BCDA3E"
   }
 },
@@ -187,7 +187,7 @@
   "model": "books.category",
   "pk": 24,
   "fields": {
-    "name": "°íÀü/¸íÀÛ",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½",
     "color": "#B4DA3E"
   }
 },
@@ -195,7 +195,7 @@
   "model": "books.category",
   "pk": 25,
   "fields": {
-    "name": "°ø¿¹/Ãë¹Ì/¼öÁý",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½",
     "color": "#ABDA3E"
   }
 },
@@ -203,7 +203,7 @@
   "model": "books.category",
   "pk": 26,
   "fields": {
-    "name": "°øÆ÷/½º¸±·¯",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#A3DA3E"
   }
 },
@@ -211,7 +211,7 @@
   "model": "books.category",
   "pk": 27,
   "fields": {
-    "name": "°úÇÐ",
+    "name": "ï¿½ï¿½ï¿½ï¿½",
     "color": "#9BDA3E"
   }
 },
@@ -219,7 +219,7 @@
   "model": "books.category",
   "pk": 28,
   "fields": {
-    "name": "±³¾ç/´ÙÅ¥¸àÅÍ¸®",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½Å¥ï¿½ï¿½ï¿½Í¸ï¿½",
     "color": "#92DA3E"
   }
 },
@@ -227,7 +227,7 @@
   "model": "books.category",
   "pk": 29,
   "fields": {
-    "name": "±³À°/ÀÚ·á",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½Ú·ï¿½",
     "color": "#8ADA3E"
   }
 },
@@ -235,7 +235,7 @@
   "model": "books.category",
   "pk": 30,
   "fields": {
-    "name": "±³À°¿ë S/W",
+    "name": "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ S/W",
     "color": "#81DA3E"
   }
 },
@@ -243,7 +243,7 @@
   "model": "books.category",
   "pk": 31,
   "fields": {
-    "name": "±¸ÅÙº£¸£Å© ¿ø¼­",
+    "name": "ï¿½ï¿½ï¿½Ùºï¿½ï¿½ï¿½Å© ï¿½ï¿½ï¿½ï¿½",
     "color": "#79DA3E"
   }
 },
@@ -251,7 +251,7 @@
   "model": "books.category",
   "pk": 32,
   "fields": {
-    "name": "±¹¾Ç",
+    "name": "ï¿½ï¿½ï¿½ï¿½",
     "color": "#70DA3E"
   }
 },
@@ -259,7 +259,7 @@
   "model": "books.category",
   "pk": 33,
   "fields": {
-    "name": "±Ý°­»ê ¿©Çà °¡´Â ÀÌ¿¡°Ô",
+    "name": "ï¿½Ý°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½",
     "color": "#68DA3E"
   }
 },
@@ -267,7 +267,7 @@
   "model": "books.category",
   "pk": 34,
   "fields": {
-    "name": "±â¼ú°øÇÐ",
+    "name": "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#5FDA3E"
   }
 },
@@ -275,7 +275,7 @@
   "model": "books.category",
   "pk": 35,
   "fields": {
-    "name": "±âÅ¸",
+    "name": "ï¿½ï¿½Å¸",
     "color": "#57DA3E"
   }
 },
@@ -283,7 +283,7 @@
   "model": "books.category",
   "pk": 36,
   "fields": {
-    "name": "±âÅ¸ ¾ð¾î±Ç µµ¼­",
+    "name": "ï¿½ï¿½Å¸ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½",
     "color": "#4FDA3E"
   }
 },
@@ -291,7 +291,7 @@
   "model": "books.category",
   "pk": 37,
   "fields": {
-    "name": "´Þ·Â/±âÅ¸",
+    "name": "ï¿½Þ·ï¿½/ï¿½ï¿½Å¸",
     "color": "#46DA3E"
   }
 },
@@ -299,7 +299,7 @@
   "model": "books.category",
   "pk": 38,
   "fields": {
-    "name": "´Þ·Â/´ÙÀÌ¾î¸®/¿¬°¨",
+    "name": "ï¿½Þ·ï¿½/ï¿½ï¿½ï¿½Ì¾î¸®/ï¿½ï¿½ï¿½ï¿½",
     "color": "#3EDA3E"
   }
 },
@@ -307,7 +307,7 @@
   "model": "books.category",
   "pk": 39,
   "fields": {
-    "name": "´ë¸¸µµ¼­",
+    "name": "ï¿½ë¸¸ï¿½ï¿½ï¿½ï¿½",
     "color": "#3EDA46"
   }
 },
@@ -315,7 +315,7 @@
   "model": "books.category",
   "pk": 40,
   "fields": {
-    "name": "´ëÇÐ±³Àç",
+    "name": "ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½",
     "color": "#3EDA4F"
   }
 },
@@ -323,7 +323,7 @@
   "model": "books.category",
   "pk": 41,
   "fields": {
-    "name": "´ëÇÐ±³Àç/Àü¹®¼­Àû",
+    "name": "ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#3EDA57"
   }
 },
@@ -331,7 +331,7 @@
   "model": "books.category",
   "pk": 42,
   "fields": {
-    "name": "µ¶ÀÏ µµ¼­",
+    "name": "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½",
     "color": "#3EDA5F"
   }
 },
@@ -339,7 +339,7 @@
   "model": "books.category",
   "pk": 43,
   "fields": {
-    "name": "µå¶ó¸¶/ÄÚ¹Ìµð",
+    "name": "ï¿½ï¿½ï¿½/ï¿½Ú¹Ìµï¿½",
     "color": "#3EDA68"
   }
 },
@@ -347,7 +347,7 @@
   "model": "books.category",
   "pk": 44,
   "fields": {
-    "name": "¶óÀÌÆ® ³ëº§",
+    "name": "ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ëº§",
     "color": "#3EDA70"
   }
 },
@@ -355,7 +355,7 @@
   "model": "books.category",
   "pk": 45,
   "fields": {
-    "name": "·Î¸Ç½º",
+    "name": "ï¿½Î¸Ç½ï¿½",
     "color": "#3EDA79"
   }
 },
@@ -363,7 +363,7 @@
   "model": "books.category",
   "pk": 46,
   "fields": {
-    "name": "¸¸È­",
+    "name": "ï¿½ï¿½È­",
     "color": "#3EDA81"
   }
 },
@@ -371,7 +371,7 @@
   "model": "books.category",
   "pk": 47,
   "fields": {
-    "name": "¹®±¸/ºñµµ¼­",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½ñµµ¼ï¿½",
     "color": "#3EDA8A"
   }
 },
@@ -379,7 +379,7 @@
   "model": "books.category",
   "pk": 48,
   "fields": {
-    "name": "¹Ú½º¼¼Æ®",
+    "name": "ï¿½Ú½ï¿½ï¿½ï¿½Æ®",
     "color": "#3EDA92"
   }
 },
@@ -387,7 +387,7 @@
   "model": "books.category",
   "pk": 49,
   "fields": {
-    "name": "¹ý·ü",
+    "name": "ï¿½ï¿½ï¿½ï¿½",
     "color": "#3EDA9B"
   }
 },
@@ -395,7 +395,7 @@
   "model": "books.category",
   "pk": 50,
   "fields": {
-    "name": "ºí·ç·¹ÀÌ",
+    "name": "ï¿½ï¿½ï¿½ç·¹ï¿½ï¿½",
     "color": "#3EDAA3"
   }
 },
@@ -403,7 +403,7 @@
   "model": "books.category",
   "pk": 51,
   "fields": {
-    "name": "»çÀü/±âÅ¸",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½Å¸",
     "color": "#3EDAAB"
   }
 },
@@ -411,7 +411,7 @@
   "model": "books.category",
   "pk": 52,
   "fields": {
-    "name": "»çÈ¸°úÇÐ",
+    "name": "ï¿½ï¿½È¸ï¿½ï¿½ï¿½ï¿½",
     "color": "#3EDAB4"
   }
 },
@@ -419,7 +419,7 @@
   "model": "books.category",
   "pk": 53,
   "fields": {
-    "name": "»óÇ°±Ç",
+    "name": "ï¿½ï¿½Ç°ï¿½ï¿½",
     "color": "#3EDABC"
   }
 },
@@ -427,7 +427,7 @@
   "model": "books.category",
   "pk": 54,
   "fields": {
-    "name": "¼ºÀÎ",
+    "name": "ï¿½ï¿½ï¿½ï¿½",
     "color": "#3EDAC5"
   }
 },
@@ -435,7 +435,7 @@
   "model": "books.category",
   "pk": 55,
   "fields": {
-    "name": "¼Ò¼³/½Ã/Èñ°î",
+    "name": "ï¿½Ò¼ï¿½/ï¿½ï¿½/ï¿½ï¿½ï¿½",
     "color": "#3EDACD"
   }
 },
@@ -443,7 +443,7 @@
   "model": "books.category",
   "pk": 56,
   "fields": {
-    "name": "¼öÇè¼­",
+    "name": "ï¿½ï¿½ï¿½è¼­",
     "color": "#3EDAD6"
   }
 },
@@ -451,7 +451,7 @@
   "model": "books.category",
   "pk": 57,
   "fields": {
-    "name": "¼öÇè¼­/ÀÚ°ÝÁõ",
+    "name": "ï¿½ï¿½ï¿½è¼­/ï¿½Ú°ï¿½ï¿½ï¿½",
     "color": "#3ED6DA"
   }
 },
@@ -459,7 +459,7 @@
   "model": "books.category",
   "pk": 58,
   "fields": {
-    "name": "½ºÆäÀÎ µµ¼­",
+    "name": "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½",
     "color": "#3ECDDA"
   }
 },
@@ -467,7 +467,7 @@
   "model": "books.category",
   "pk": 59,
   "fields": {
-    "name": "¾Ë¶óµò¿Àµð¿ÀºÏ",
+    "name": "ï¿½Ë¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#3EC5DA"
   }
 },
@@ -475,7 +475,7 @@
   "model": "books.category",
   "pk": 60,
   "fields": {
-    "name": "¾Ö´Ï¸ÞÀÌ¼Ç",
+    "name": "ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½",
     "color": "#3EBCDA"
   }
 },
@@ -483,7 +483,7 @@
   "model": "books.category",
   "pk": 61,
   "fields": {
-    "name": "¾×¼Ç/¾îµåº¥Ã³",
+    "name": "ï¿½×¼ï¿½/ï¿½ï¿½åº¥Ã³",
     "color": "#3EB4DA"
   }
 },
@@ -491,7 +491,7 @@
   "model": "books.category",
   "pk": 62,
   "fields": {
-    "name": "¾î¸°ÀÌ",
+    "name": "ï¿½î¸°ï¿½ï¿½",
     "color": "#3EABDA"
   }
 },
@@ -499,7 +499,7 @@
   "model": "books.category",
   "pk": 63,
   "fields": {
-    "name": "¾ð¾îÇÐ",
+    "name": "ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#3EA3DA"
   }
 },
@@ -507,7 +507,7 @@
   "model": "books.category",
   "pk": 64,
   "fields": {
-    "name": "¿¡¼¼ÀÌ",
+    "name": "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#3E9BDA"
   }
 },
@@ -515,7 +515,7 @@
   "model": "books.category",
   "pk": 65,
   "fields": {
-    "name": "¿©Çà",
+    "name": "ï¿½ï¿½ï¿½ï¿½",
     "color": "#3E92DA"
   }
 },
@@ -523,7 +523,7 @@
   "model": "books.category",
   "pk": 66,
   "fields": {
-    "name": "¿ª»ç",
+    "name": "ï¿½ï¿½ï¿½ï¿½",
     "color": "#3E8ADA"
   }
 },
@@ -531,7 +531,7 @@
   "model": "books.category",
   "pk": 67,
   "fields": {
-    "name": "¿¹¼ú/´ëÁß¹®È­",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ß¹ï¿½È­",
     "color": "#3E81DA"
   }
 },
@@ -539,7 +539,7 @@
   "model": "books.category",
   "pk": 68,
   "fields": {
-    "name": "¿Àµð¿ÀºÏ",
+    "name": "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#3E79DA"
   }
 },
@@ -547,7 +547,7 @@
   "model": "books.category",
   "pk": 69,
   "fields": {
-    "name": "¿Àµð¿ÀÆÄÀÏ",
+    "name": "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#3E70DA"
   }
 },
@@ -555,7 +555,7 @@
   "model": "books.category",
   "pk": 70,
   "fields": {
-    "name": "¿Ü±¹¾î",
+    "name": "ï¿½Ü±ï¿½ï¿½ï¿½",
     "color": "#3E68DA"
   }
 },
@@ -563,7 +563,7 @@
   "model": "books.category",
   "pk": 71,
   "fields": {
-    "name": "¿ä¸®",
+    "name": "ï¿½ä¸®",
     "color": "#3E5FDA"
   }
 },
@@ -571,7 +571,7 @@
   "model": "books.category",
   "pk": 72,
   "fields": {
-    "name": "¿ùµå¹ÂÁ÷",
+    "name": "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#3E57DA"
   }
 },
@@ -579,7 +579,7 @@
   "model": "books.category",
   "pk": 73,
   "fields": {
-    "name": "À¯¸Ó",
+    "name": "ï¿½ï¿½ï¿½ï¿½",
     "color": "#3E4FDA"
   }
 },
@@ -587,7 +587,7 @@
   "model": "books.category",
   "pk": 74,
   "fields": {
-    "name": "À¯¾Æ",
+    "name": "ï¿½ï¿½ï¿½ï¿½",
     "color": "#3E46DA"
   }
 },
@@ -595,7 +595,7 @@
   "model": "books.category",
   "pk": 75,
   "fields": {
-    "name": "À¯¾Æ/¾Æµ¿",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½Æµï¿½",
     "color": "#3E3EDA"
   }
 },
@@ -603,7 +603,7 @@
   "model": "books.category",
   "pk": 76,
   "fields": {
-    "name": "À½¾ÇDVD",
+    "name": "ï¿½ï¿½ï¿½ï¿½DVD",
     "color": "#463EDA"
   }
 },
@@ -611,7 +611,7 @@
   "model": "books.category",
   "pk": 77,
   "fields": {
-    "name": "ÀÇÇÐ",
+    "name": "ï¿½ï¿½ï¿½ï¿½",
     "color": "#4F3EDA"
   }
 },
@@ -619,7 +619,7 @@
   "model": "books.category",
   "pk": 78,
   "fields": {
-    "name": "ÀÎ¹®/»çÈ¸",
+    "name": "ï¿½Î¹ï¿½/ï¿½ï¿½È¸",
     "color": "#573EDA"
   }
 },
@@ -627,7 +627,7 @@
   "model": "books.category",
   "pk": 79,
   "fields": {
-    "name": "ÀÎ¹®ÇÐ",
+    "name": "ï¿½Î¹ï¿½ï¿½ï¿½",
     "color": "#5F3EDA"
   }
 },
@@ -635,7 +635,7 @@
   "model": "books.category",
   "pk": 80,
   "fields": {
-    "name": "ÀÎ¹°/ÆòÀü",
+    "name": "ï¿½Î¹ï¿½/ï¿½ï¿½ï¿½ï¿½",
     "color": "#683EDA"
   }
 },
@@ -643,7 +643,7 @@
   "model": "books.category",
   "pk": 81,
   "fields": {
-    "name": "ÀÏº» µµ¼­",
+    "name": "ï¿½Ïºï¿½ ï¿½ï¿½ï¿½ï¿½",
     "color": "#703EDA"
   }
 },
@@ -651,7 +651,7 @@
   "model": "books.category",
   "pk": 82,
   "fields": {
-    "name": "ÀÚ±â°è¹ß",
+    "name": "ï¿½Ú±ï¿½ï¿½ï¿½",
     "color": "#793EDA"
   }
 },
@@ -659,7 +659,7 @@
   "model": "books.category",
   "pk": 83,
   "fields": {
-    "name": "ÀÚ¿¬°úÇÐ",
+    "name": "ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#813EDA"
   }
 },
@@ -667,7 +667,7 @@
   "model": "books.category",
   "pk": 84,
   "fields": {
-    "name": "ÀâÁö",
+    "name": "ï¿½ï¿½ï¿½ï¿½",
     "color": "#8A3EDA"
   }
 },
@@ -675,7 +675,7 @@
   "model": "books.category",
   "pk": 85,
   "fields": {
-    "name": "Àå¸£¼Ò¼³",
+    "name": "ï¿½å¸£ï¿½Ò¼ï¿½",
     "color": "#923EDA"
   }
 },
@@ -683,7 +683,7 @@
   "model": "books.category",
   "pk": 86,
   "fields": {
-    "name": "ÀçÁî",
+    "name": "ï¿½ï¿½ï¿½ï¿½",
     "color": "#9B3EDA"
   }
 },
@@ -691,7 +691,7 @@
   "model": "books.category",
   "pk": 87,
   "fields": {
-    "name": "Àü±â/ÀÚ¼­Àü",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½Ú¼ï¿½ï¿½ï¿½",
     "color": "#A33EDA"
   }
 },
@@ -699,7 +699,7 @@
   "model": "books.category",
   "pk": 88,
   "fields": {
-    "name": "ÀüÁý/Áß°íÀüÁý",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#AB3EDA"
   }
 },
@@ -707,7 +707,7 @@
   "model": "books.category",
   "pk": 89,
   "fields": {
-    "name": "Á¦ÀÛ±¹°¡º°",
+    "name": "ï¿½ï¿½ï¿½Û±ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#B43EDA"
   }
 },
@@ -715,7 +715,7 @@
   "model": "books.category",
   "pk": 90,
   "fields": {
-    "name": "Á¾±³/¸í»ó/±âÅ¸",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½Å¸",
     "color": "#BC3EDA"
   }
 },
@@ -723,7 +723,7 @@
   "model": "books.category",
   "pk": 91,
   "fields": {
-    "name": "Á¾±³/¸í»ó/Á¡¼ú",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½",
     "color": "#C53EDA"
   }
 },
@@ -731,7 +731,7 @@
   "model": "books.category",
   "pk": 92,
   "fields": {
-    "name": "Á¾±³/¿ªÇÐ",
+    "name": "ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½",
     "color": "#CD3EDA"
   }
 },
@@ -739,7 +739,7 @@
   "model": "books.category",
   "pk": 93,
   "fields": {
-    "name": "ÁÁÀººÎ¸ð",
+    "name": "ï¿½ï¿½ï¿½ï¿½ï¿½Î¸ï¿½",
     "color": "#D63EDA"
   }
 },
@@ -747,7 +747,7 @@
   "model": "books.category",
   "pk": 94,
   "fields": {
-    "name": "Áß°íµîÂü°í¼­",
+    "name": "ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#DA3ED6"
   }
 },
@@ -755,7 +755,7 @@
   "model": "books.category",
   "pk": 95,
   "fields": {
-    "name": "Áß±¹ µµ¼­",
+    "name": "ï¿½ß±ï¿½ ï¿½ï¿½ï¿½ï¿½",
     "color": "#DA3ECD"
   }
 },
@@ -763,7 +763,7 @@
   "model": "books.category",
   "pk": 96,
   "fields": {
-    "name": "ÁßÇÐ±³Âü°í¼­",
+    "name": "ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#DA3EC5"
   }
 },
@@ -771,7 +771,7 @@
   "model": "books.category",
   "pk": 97,
   "fields": {
-    "name": "ÁõÁ¤¿ë À½¾Ç»óÇ°±Ç",
+    "name": "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ç»ï¿½Ç°ï¿½ï¿½",
     "color": "#DA3EBC"
   }
 },
@@ -779,7 +779,7 @@
   "model": "books.category",
   "pk": 98,
   "fields": {
-    "name": "Ã»¼Ò³â",
+    "name": "Ã»ï¿½Ò³ï¿½",
     "color": "#DA3EB4"
   }
 },
@@ -787,7 +787,7 @@
   "model": "books.category",
   "pk": 99,
   "fields": {
-    "name": "Ã»¼Ò³â_ÃßÃµµµ¼­",
+    "name": "Ã»ï¿½Ò³ï¿½_ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½",
     "color": "#DA3EAB"
   }
 },
@@ -795,7 +795,7 @@
   "model": "books.category",
   "pk": 100,
   "fields": {
-    "name": "ÃÊµîÂü°í¼­",
+    "name": "ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#DA3EA3"
   }
 },
@@ -803,7 +803,7 @@
   "model": "books.category",
   "pk": 101,
   "fields": {
-    "name": "ÃÊµîÇÐ±³Âü°í¼­",
+    "name": "ï¿½Êµï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#DA3E9B"
   }
 },
@@ -811,7 +811,7 @@
   "model": "books.category",
   "pk": 102,
   "fields": {
-    "name": "Ãë¹Ì/½ºÆ÷Ã÷",
+    "name": "ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#DA3E92"
   }
 },
@@ -819,7 +819,7 @@
   "model": "books.category",
   "pk": 103,
   "fields": {
-    "name": "ÄÄÇ»ÅÍ",
+    "name": "ï¿½ï¿½Ç»ï¿½ï¿½",
     "color": "#DA3E8A"
   }
 },
@@ -827,7 +827,7 @@
   "model": "books.category",
   "pk": 104,
   "fields": {
-    "name": "ÄÄÇ»ÅÍ/¸ð¹ÙÀÏ",
+    "name": "ï¿½ï¿½Ç»ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#DA3E81"
   }
 },
@@ -835,7 +835,7 @@
   "model": "books.category",
   "pk": 105,
   "fields": {
-    "name": "Å¬·¡½Ä",
+    "name": "Å¬ï¿½ï¿½ï¿½ï¿½",
     "color": "#DA3E79"
   }
 },
@@ -843,7 +843,7 @@
   "model": "books.category",
   "pk": 106,
   "fields": {
-    "name": "ÆÇÅ¸Áö/¹«Çù",
+    "name": "ï¿½ï¿½Å¸ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½",
     "color": "#DA3E70"
   }
 },
@@ -851,7 +851,7 @@
   "model": "books.category",
   "pk": 107,
   "fields": {
-    "name": "ÆË",
+    "name": "ï¿½ï¿½",
     "color": "#DA3E68"
   }
 },
@@ -859,7 +859,7 @@
   "model": "books.category",
   "pk": 108,
   "fields": {
-    "name": "ÇÑ±¹°ü·Ãµµ¼­",
+    "name": "ï¿½Ñ±ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½",
     "color": "#DA3E5F"
   }
 },
@@ -867,7 +867,7 @@
   "model": "books.category",
   "pk": 109,
   "fields": {
-    "name": "ÇØ¿Ü±¸¸Å",
+    "name": "ï¿½Ø¿Ü±ï¿½ï¿½ï¿½",
     "color": "#DA3E57"
   }
 },
@@ -875,7 +875,7 @@
   "model": "books.category",
   "pk": 110,
   "fields": {
-    "name": "ÇØ¿Üµµ¼­",
+    "name": "ï¿½Ø¿Üµï¿½ï¿½ï¿½",
     "color": "#DA3E4F"
   }
 },
@@ -883,7 +883,7 @@
   "model": "books.category",
   "pk": 111,
   "fields": {
-    "name": "ÇØ¿ÜÀâÁö",
+    "name": "ï¿½Ø¿ï¿½ï¿½ï¿½ï¿½ï¿½",
     "color": "#DA3E46"
   }
 }
