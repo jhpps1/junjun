@@ -4,7 +4,8 @@ from accounts.models import User
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True)
     color = models.CharField(max_length=7)  # HEX 컬러코드
-
+    cid_list = models.JSONField(null=True, blank=True)  # JSON 형태로 cid_list 저장
+    
     def __str__(self):
         return self.name
 

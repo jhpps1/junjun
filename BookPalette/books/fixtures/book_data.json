@@ -1,0 +1,1302 @@
+[
+  {
+    "model": "books.book",
+    "pk": 1,
+    "fields": {
+      "title": "우리는 왜 학교로 돌아갈 수 없었나 - 24학번 의대생들의 1년간의 기록",
+      "author": "솔직한 의대생들 (지은이)",
+      "category": 64,
+      "cover": "https://image.aladin.co.kr/product/36489/48/coversum/k602039118_1.jpg",
+      "summary": "단순한 정책에 대한 비판이 아닌, 대한민국 의료 시스템의 본질을 묻는 뜨거운 질문이 담긴 책이다. ‘의대 정원 증원’이라는 단어 뒤에 숨겨진 구조적 문제와, 의료 현장의 절규를 24학번 의대생의 시선으로 풀어낸다.",
+      "published_date": "2025-05-23",
+      "isbn": "9791172633868"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 2,
+    "fields": {
+      "title": "멀리도 가까이도 느긋한 여행",
+      "author": "마스다 미리 (지은이), 이소담 (옮긴이)",
+      "category": 64,
+      "cover": "https://image.aladin.co.kr/product/36489/49/coversum/k612039118_1.jpg",
+      "summary": "『세계 방방곡곡 여행 일기』 출간 이후, 2년 만에 마스다 미리 여행 에세이가 북포레스트에서 출간되었다. 멀리 또 가까이 느긋하고 자유롭게 다녀온 여행을 담은 에세이다.",
+      "published_date": "2025-06-10",
+      "isbn": "9791192025230"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "title": "여성 쓰기 - 우리는 텍스트로 우리의 삶을 살아간다",
+      "author": "캐롤린 하일브런 (지은이), 오수원 (옮긴이)",
+      "category": 52,
+      "cover": "https://image.aladin.co.kr/product/36489/51/coversum/k642039118_1.jpg",
+      "summary": "미국에서 1988년 첫 출간 이후로 페미니즘 운동과 여성 문학, 비평계에 새로운 생명을 불러일으켰던 고전이자 결코 바래지 못하는 문제작. 하일브런은 컬럼비아 대학교 영문학과 최초의 여성 종신 교수로 1960년부터 30년 이상 재직하며 여성 작가들의 전통을 체계화하는 동시에 페미니즘 비평의 이론적 바탕을 넓혔다고 추앙받는다.",
+      "published_date": "2025-06-10",
+      "isbn": "9791190853651"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "title": "그래도 되는 차별은 없다 - 인권 최전선의 변론",
+      "author": "공익인권법재단 공감 (지은이)",
+      "category": 52,
+      "cover": "https://image.aladin.co.kr/product/36489/53/coversum/8936480812_1.jpg",
+      "summary": "낯선 혐오와 간교해진 편견에 맞서 소수자들의 곁을 지켜온 우리나라 최초의 전업 공익변호사 단체 ‘공익인권법재단 공감’이 벌여온 치열한 법정투쟁 이야기. 이주난민, 성소수자, 여성, 빈곤, 불안정노동, 재난참사 등 여러 분야에서 최근 사회적 쟁점으로 떠올랐던 사건 및 소송의 헤드라인 너머 소상한 사연과 처절한 분투, 조밀한 고민을 기록했다.",
+      "published_date": "2025-05-30",
+      "isbn": "9788936480813"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 5,
+    "fields": {
+      "title": "비상",
+      "author": "양광모 (지은이)",
+      "category": 98,
+      "cover": "https://image.aladin.co.kr/product/36489/53/coversum/k762039118_1.jpg",
+      "summary": "맑은 감수성의 시를 쓰는 양광모 시인의 잠언집 『비상』의 개정증보판이 출간되었다. 그의 시 가운데 「가장 넓은 길」의 한 구절이 2024학년도 수능시험 필적 확인 문구로 게시되어 세상 사람들에게 감동을 주기도 했는데, 그전에 이미 ‘필사하기 좋은 책’, ‘하루에 한 문장씩 지혜를 더하는 책’으로 꾸준히 사랑받아 온 이 책이 있었다.",
+      "published_date": "2025-06-10",
+      "isbn": "9791172670481"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 6,
+    "fields": {
+      "title": "평범한 경음부 3",
+      "author": "Tetsuo Ideuchi (지은이), Kuwahali (원작), 이소연 (옮긴이)",
+      "category": 46,
+      "cover": "https://image.aladin.co.kr/product/36489/55/coversum/k712039118_1.jpg",
+      "summary": "아야메의 동아리 탈퇴를 막고, 밴드 멤버로 영입하기 위해 움직이기 시작한 하토노와 친구들. 모모와 린이 등교한 아야메를 설득하는 한편, 하토노는 우연히 들은 타카미의 어떤 발언에 감정이 폭발하고 마는데….",
+      "published_date": "2025-05-27",
+      "isbn": "9791142802652"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 7,
+    "fields": {
+      "title": "불안 조절 카드",
+      "author": "최재영, 조다혜, 윤아리, 황정원 (지은이)",
+      "category": 41,
+      "cover": "https://image.aladin.co.kr/product/36489/56/coversum/k742039118_1.jpg",
+      "summary": "",
+      "published_date": "2025-05-22",
+      "isbn": "8809507025453"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 8,
+    "fields": {
+      "title": "2026 간호사 국가고시를 위한 보건의약관계법규 알Zip 핵심노트 - 간호사 국가시험 대비 문제형태 요약정리교재",
+      "author": "김희영 (지은이)",
+      "category": 57,
+      "cover": "https://image.aladin.co.kr/product/36489/56/coversum/k852039118_1.jpg",
+      "summary": "",
+      "published_date": "2025-06-27",
+      "isbn": "9791192534626"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 9,
+    "fields": {
+      "title": "압수·수색의 법리",
+      "author": "성기정 (지은이)",
+      "category": 41,
+      "cover": "https://image.aladin.co.kr/product/36489/56/coversum/k882039118_1.jpg",
+      "summary": "",
+      "published_date": "2025-05-30",
+      "isbn": "9791130349749"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 10,
+    "fields": {
+      "title": "사애 - 35살 세일러문",
+      "author": "황승원 (지은이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36489/56/coversum/k822039118_1.jpg",
+      "summary": "인생의 기회는 3번이라는데 사랑도 3번일까? 2번이라도 괜찮을 것 같은데… 35살 남녀의 싱숭생숭 오춘기. 학창시절 서로 알고 지냈던 아인과 현명은 졸업 후 사회에서 조우하게 되는데…",
+      "published_date": "2025-05-30",
+      "isbn": "9791172633950"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 11,
+    "fields": {
+      "title": "카르보나라 고민 연구소 - 무엇이든 해결해 드립니다!",
+      "author": "훗산 (지은이), 김윤정 (옮긴이)",
+      "category": 62,
+      "cover": "https://image.aladin.co.kr/product/36489/56/coversum/k812039118_1.jpg",
+      "summary": "어느 한적한 마을, 커다란 나무 위에는 마치 로켓처럼 우뚝 솟은 연구소 하나가 있다. 이곳은 어린이의 고민 편지를 받으면 바로 연구소를 변신시켜 출동하는 멋진 연구소다!",
+      "published_date": "2025-06-01",
+      "isbn": "9791198912138"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 12,
+    "fields": {
+      "title": "전자상거래 등에서의 소비자보호에 관한 법률 (약칭 : 전자상거래법) - 법령·시행령·시행규칙 3단 수록",
+      "author": "KDS 편집부 (지은이)",
+      "category": 41,
+      "cover": "https://image.aladin.co.kr/product/36489/56/coversum/k962039119_1.jpg",
+      "summary": "",
+      "published_date": "2025-05-01",
+      "isbn": "9791194526315"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 13,
+    "fields": {
+      "title": "2026 에듀윌 반려동물행동지도사 한권끝장 + 무료특강 - 최신 출제기준 및 개정법령 100% 반영",
+      "author": "이하늬, 이광호 (지은이)",
+      "category": null,
+      "cover": "https://image.aladin.co.kr/product/36489/57/coversum/k992039119_1.jpg",
+      "summary": "",
+      "published_date": "2025-05-30",
+      "isbn": "9791136037602"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 14,
+    "fields": {
+      "title": "2026 박상민 JUSTICE 교정학 단원별 핵심 1000제 [교정학편]",
+      "author": "박상민 (지은이)",
+      "category": 57,
+      "cover": "https://image.aladin.co.kr/product/36489/57/coversum/k932039119_1.jpg",
+      "summary": "",
+      "published_date": "2025-06-05",
+      "isbn": "9791130324463"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 15,
+    "fields": {
+      "title": "독립운동의 역사사회학 - 의열투쟁, 신채호 사상, 조선의용대 심화연구",
+      "author": "김영범 (지은이)",
+      "category": 66,
+      "cover": "https://image.aladin.co.kr/product/36489/57/coversum/k942039119_1.jpg",
+      "summary": "",
+      "published_date": "2025-05-13",
+      "isbn": "9791160689693"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 16,
+    "fields": {
+      "title": "나노마신 3",
+      "author": "한중월야 (지은이), 금강불괴 (그림), 현절무 (각색)",
+      "category": 46,
+      "cover": "https://image.aladin.co.kr/product/36489/57/coversum/k062039119_1.jpg",
+      "summary": "",
+      "published_date": "2025-06-10",
+      "isbn": "9791173150746"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 17,
+    "fields": {
+      "title": "병아리 엄마가 된 5학년",
+      "author": "나현정 (지은이)",
+      "category": 62,
+      "cover": "https://image.aladin.co.kr/product/36489/57/coversum/k002039119_1.jpg",
+      "summary": "아름다운 농촌의 작은 학교에서, 아이들은 유정란을 부화시켜 병아리를 기르기로 한다. 병아리가 자라 알을 낳으면 그 알을 팔아 돈을 벌기로 한 아이들. 그러나 병아리들과 함께하는 시간 속에서 아이들은 예상치 못한 감동과 아픔을 맞닥뜨리게 된다.",
+      "published_date": "2025-05-23",
+      "isbn": "9791172633820"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 18,
+    "fields": {
+      "title": "위기의 사람들 2 - 전직 소방관의 실전 이야기",
+      "author": "강만구 (지은이)",
+      "category": 64,
+      "cover": "https://image.aladin.co.kr/product/36489/57/coversum/k152039119_1.jpg",
+      "summary": "",
+      "published_date": "2025-05-22",
+      "isbn": "9791172633929"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 19,
+    "fields": {
+      "title": "아침을 여는 소리",
+      "author": "채장수 (지은이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36489/58/coversum/k182039119_1.jpg",
+      "summary": "하루를 맞이하는 일상의 순간에 잠시라도 주변과 눈 맞춤을 통해 교감을 가져볼 수 있기를 바라는 마음으로 준비하였다. 하루에 한 번이라도 하늘을 쳐다보고서 나 자신과의 대화의 시작이 되길 바란다.",
+      "published_date": "2025-05-20",
+      "isbn": "9791172633844"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 20,
+    "fields": {
+      "title": "인공지능과 관계맺기",
+      "author": "윤상균 (지은이)",
+      "category": 41,
+      "cover": "https://image.aladin.co.kr/product/36489/58/coversum/k252039119_1.jpg",
+      "summary": "",
+      "published_date": "2025-05-31",
+      "isbn": "9791172790851"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 21,
+    "fields": {
+      "title": "깊은 페루 - 안데스적 가치와 상생의 사유",
+      "author": "강정원 (지은이)",
+      "category": 52,
+      "cover": "https://image.aladin.co.kr/product/36489/58/coversum/k282039119_1.jpg",
+      "summary": "라틴아메리카 안에서 페루가 지닌 독특한 역사와 생태적 다양성, 문화적 혼종성을 ‘안데스적 가치’라는 사유의 틀로 풀어낸다. 저자 강정원은 잉카 문명과 식민지 경험, 현대 개발주의의 파고 속에서도 이어지는 공동체 중심의 세계관에 ‘안데스적 가치’가 있다고 본다.",
+      "published_date": "2025-04-28",
+      "isbn": "9791189333959"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 22,
+    "fields": {
+      "title": "유숙열의 뉴욕 페미니즘 리포트 - 1984~1991",
+      "author": "유숙열 (지은이)",
+      "category": null,
+      "cover": "https://image.aladin.co.kr/product/36489/59/coversum/k232039119_1.jpg",
+      "summary": "",
+      "published_date": "2025-05-28",
+      "isbn": "9791190390361"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 23,
+    "fields": {
+      "title": "2025 지역농협 6급 기본서 - 수정판",
+      "author": "JH적성검사연구소 (지은이)",
+      "category": 57,
+      "cover": "https://image.aladin.co.kr/product/36489/59/coversum/k302039119_1.jpg",
+      "summary": "",
+      "published_date": "2025-07-12",
+      "isbn": "9791166431180"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 24,
+    "fields": {
+      "title": "원인과 결과의 법칙 실천편 : 오늘부터 좋은 사람이 되기로 했다",
+      "author": "이서원 (지은이), 제임스 알렌 (원작), 조대호 (옮긴이)",
+      "category": 82,
+      "cover": "https://image.aladin.co.kr/product/36489/60/coversum/8961095536_1.jpg",
+      "summary": "‘생각이 삶을 만든다’는 제임스 앨런의 대표작 《원인과 결과의 법칙 1 - 생각대로 된다》와 《원인과 결과의 법칙 2 - 뿌린 대로 거둔다》에 이은 《원인과 결과의 법칙 실천편 - 오늘부터 좋은 사람이 되기로 했다》는 그의 철학을 오늘의 삶에 연결한 책이다.",
+      "published_date": "2025-06-04",
+      "isbn": "9788961095532"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 25,
+    "fields": {
+      "title": "오늘 하루도 잘살았다 - 이제 6학년이 된 나에게",
+      "author": "송점순 (지은이)",
+      "category": 64,
+      "cover": "https://image.aladin.co.kr/product/36489/60/coversum/k332039119_1.jpg",
+      "summary": "이제 60대가 된 자신을 돌아보면서 부모와 가족, 친구들에게 감사와 위로를 건네는 에세이집이다. 인생에서 60대를 맞은 분들이 공감하면서 위로를 받을 수 있는 힐링 에세이이다. 작가는 글을 쓰면서 내 안의 또 다른 나를 찾아 떠나는 소풍이라는 말을 한다.",
+      "published_date": "2025-05-10",
+      "isbn": "9791199030848"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 26,
+    "fields": {
+      "title": "북큐레이션 문화 Vol.3",
+      "author": "북큐레이션 연구회 편집부 (지은이)",
+      "category": 84,
+      "cover": "https://image.aladin.co.kr/product/36489/61/coversum/k472039119_1.jpg",
+      "summary": "",
+      "published_date": "2025-06-15",
+      "isbn": "9773091689003"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 27,
+    "fields": {
+      "title": "명저필사 세트 - 전4권",
+      "author": "아르투어 쇼펜하우어, 프리드리히 니체, 법구, 공자 (지은이)",
+      "category": 79,
+      "cover": "https://image.aladin.co.kr/product/36489/61/coversum/k402039119_2.jpg",
+      "summary": "",
+      "published_date": "2025-05-28",
+      "isbn": "9791194227069"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 28,
+    "fields": {
+      "title": "76층 탐정",
+      "author": "정명섭 (지은이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36489/61/coversum/k412039119_1.jpg",
+      "summary": "서울 근교 신도시의 고급 아파트 ‘그린우드’의 최상층에 거주하는 유혜린. 무료한 일상에서 유일한 취미인 요가를 배우기 위해 요가학원 수강생들과 인도로 떠난다. 평화로울 줄만 알았던 인도에서 같은 아파트 주민이자 요가학원 수강생 남성신이 투신하는 장면을 목격한다.",
+      "published_date": "2025-06-11",
+      "isbn": "9791194755272"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 29,
+    "fields": {
+      "title": "노화 해방 - 생체 나이를 거꾸로 돌리는 저속노화 프로젝트",
+      "author": "장 마르크 르메트르 (지은이), 김모 (옮긴이), 정희원 (감수)",
+      "category": 18,
+      "cover": "https://image.aladin.co.kr/product/36489/63/coversum/k552039119_1.jpg",
+      "summary": "세포 역노화 과정을 세계 최초로 입증한 노화과학 최고 권위자 장 마르크 르메트르의 책이 21세기북스에서 출간되었다. 이 책은 노화의 메커니즘을 분석하여 건강하게 나이 드는 법을 다방면으로 제시한다.",
+      "published_date": "2025-06-02",
+      "isbn": "9791173572890"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 30,
+    "fields": {
+      "title": "집중력 쑥쑥! 주스 가게",
+      "author": "강새로운 (지은이)",
+      "category": 41,
+      "cover": "https://image.aladin.co.kr/product/36489/63/coversum/k502039119_1.jpg",
+      "summary": "인지적 유연성과 처리속도 증진을 위한 스트루프 효과 연습 게임을 통해 실행기능, 시각적 인지능력, 주의집중력, 과제에 대한 처리속도를 증진시켜주는 도구다.",
+      "published_date": "2025-05-26",
+      "isbn": "8809507025477"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 31,
+    "fields": {
+      "title": "청년이 없는 나라 - 한국은 과연 망했는가",
+      "author": "김태유 (지은이)",
+      "category": 21,
+      "cover": "https://image.aladin.co.kr/product/36489/63/coversum/k672039119_1.jpg",
+      "summary": "서울대 문명사학자 김태유 교수가 2013년에 발간한 《은퇴가 없는 나라》를 2025년의 상황에 맞게 발전시킨 책으로, 한국형 초저출산의 근본 원인과 그동안의 잘못된 정책 그리고 해결방법을 제언한다.",
+      "published_date": "2025-05-31",
+      "isbn": "9791198290564"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 32,
+    "fields": {
+      "title": "비트코인 문명의 개척자들 - 클라우드 마이닝으로 다시 쓰는 자본주의 연대기",
+      "author": "박한일 (지은이)",
+      "category": 21,
+      "cover": "https://image.aladin.co.kr/product/36489/64/coversum/k682039119_1.jpg",
+      "summary": "'왜 비트코인이며, 비트코인이 살아남을 수 있었던 까닭은 무엇일까?' 그리고 '앞으로 비트코인은 무엇을 할 수 있을까?' 단순히 금융 시스템으로서만이 아니라 학문으로서 비트코인을 만나게 되는 경제경영서이다.",
+      "published_date": "2025-05-28",
+      "isbn": "9791198882530"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 33,
+    "fields": {
+      "title": "다 함께 틴틴팅클!",
+      "author": "난 (지은이)",
+      "category": 46,
+      "cover": "https://image.aladin.co.kr/product/36489/65/coversum/k772039119_1.jpg",
+      "summary": "우리 모두의 다정다감한 친구 틴틴팅클의 새로운 이야기가 5월 가정의 달을 맞아 신간이 출간되었다. 《오늘도 틴틴팅클!》 《언제나 틴틴팅클!》에 이은 세 번째 단행본 《다 함께 틴틴팅클!》에는 다섯 명의 주인공 틴틴, 팅클, 콩물, 그리고 베리미니 자매의 가족을 중심으로 한 에피소드들이 수록되었다.",
+      "published_date": "2025-05-28",
+      "isbn": "9791173572067"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 34,
+    "fields": {
+      "title": "지방자치법 - 법령·시행령·시행규칙 3단 수록",
+      "author": "KDS 편집부 (지은이)",
+      "category": 41,
+      "cover": "https://image.aladin.co.kr/product/36489/65/coversum/k702039119_1.jpg",
+      "summary": "",
+      "published_date": "2025-05-08",
+      "isbn": "9791194526339"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 35,
+    "fields": {
+      "title": "[세트] 위대한 유산 1~2 세트 - 전2권",
+      "author": "찰스 디킨스 (지은이), 이세순 (옮긴이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36489/66/coversum/k722039119_1.jpg",
+      "summary": "19세기 영문학을 대표하는 소설가이자 셰익스피어에 버금가는 대문호, 찰스 디킨스의 걸작 『위대한 유산』을 빛소굴 세계문학전집으로 선보인다. 『위대한 유산』은 당시 영국 사회의 단면과 그 시대의 인간상을 섬세하고 깊은 통찰력으로 꿰뚫어 보고 해학적이고도 풍자적으로 묘사한 사실주의 사회소설이다.",
+      "published_date": "2025-05-27",
+      "isbn": ""
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 36,
+    "fields": {
+      "title": "웅덩이 안의 월인천강지곡",
+      "author": "김영화 (지은이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36489/66/coversum/k732039119_1.jpg",
+      "summary": "김영화의 시집 『웅덩이 안의 월인천강지곡』에는 다양한 공간이 등장한다. 침대, 창가, 베란다 같은 집안의 내밀한 공간과 거리, 차 안, 천변, 목욕탕 같은 삶과 밀접한 공간과 낙산 해변, 신두리 해안사구, 지심도 같은 일상에서 좀 더 확장된 공간과 그리고 스페인, 오스트레일리아, 하와이 같은 국경을 벗어난 견문의 공간이 시집 도처에 산재한다.",
+      "published_date": "2025-05-31",
+      "isbn": "9791165121792"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 37,
+    "fields": {
+      "title": "숲속에 무슨 일이?",
+      "author": "카테리나 고렐리크 (지은이), 김여진 (옮긴이)",
+      "category": 74,
+      "cover": "https://image.aladin.co.kr/product/36489/68/coversum/k742039119_1.jpg",
+      "summary": "",
+      "published_date": "2025-05-30",
+      "isbn": "9791194755203"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 38,
+    "fields": {
+      "title": "소년병과 들국화 - 제34회 소천아동문학상 수상작",
+      "author": "남미영 (지은이), 이형진 (그림)",
+      "category": 62,
+      "cover": "https://image.aladin.co.kr/product/36489/68/coversum/8930271847_1.jpg",
+      "summary": "한국교육개발원 고(故) 신세호 원장의 실화를 바탕으로 한 6 ? 25전쟁 이야기다. 1950년 6월 25일, 우리 민족에게 큰 비극이 시작되었을 때, 서울에서 학교를 다니던 주인공 소년은 국군에 자원입대하여 소년병이 된다. 북진하는 국군 부대의 일원이 된 소년병은 고향 마을에 가 보았지만 가족의 피란으로 만나지 못하는데...",
+      "published_date": "2025-06-15",
+      "isbn": "9788930271844"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 39,
+    "fields": {
+      "title": "살인 편지",
+      "author": "설라리 젠틸 (지은이), 최주원 (옮긴이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36489/68/coversum/k852039119_1.jpg",
+      "summary": "사건 당시 한자리에 있던 네 사람 중 한 사람이 어떻게 누군가를 죽일 수 있는지를 추리하는 것으로 시작되지만 그것만이 전부는 아니다. 이야기는 진범에 대한 단서나 트릭을 제시하는 것에서 나아가 인간의 욕망, 갈등, 우정과 사랑, 공교로운 우연을 어떻게든 인연으로 이어가고자 하는 인간적 안간힘과 실마리에 더욱 초점을 맞춘다.",
+      "published_date": "2025-05-28",
+      "isbn": "9791171714261"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 40,
+    "fields": {
+      "title": "AI 프롬프팅과 지식재산",
+      "author": "김원오 (지은이)",
+      "category": null,
+      "cover": "https://image.aladin.co.kr/product/36489/69/coversum/k802039119_1.jpg",
+      "summary": "프롬프트 기반 창작 시대를 맞아 AI 산출물의 법적 지위와 창작자 권리 문제를 분석한다. 저작권, 특허, 딥페이크 등 핵심 쟁점을 총망라해 창작과 규제의 새 기준을 제시한다.",
+      "published_date": "2025-06-04",
+      "isbn": "9791143002709"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 41,
+    "fields": {
+      "title": "AI와 스타트업",
+      "author": "김주희 (지은이)",
+      "category": null,
+      "cover": "https://image.aladin.co.kr/product/36489/71/coversum/k912039110_1.jpg",
+      "summary": "AI는 스타트업의 창의성과 결합해 사회를 다시 설계하고 새로운 가치를 만든다. 혁신이 작동하는 구체적 장면을 AI와 스타트업의 결합 사례를 통해 보여 준다.",
+      "published_date": "2025-06-05",
+      "isbn": "9791143002303"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 42,
+    "fields": {
+      "title": "AI와 UX 디자인",
+      "author": "김향아 (지은이)",
+      "category": null,
+      "cover": "https://image.aladin.co.kr/product/36489/71/coversum/k082039110_1.jpg",
+      "summary": "인공지능이 리서치, 분석, 프로토타이핑, 평가 등 UX 디자인의 전 과정에 어떻게 개입하고 있는지 실무 중심으로 조망한다. AI 시대 디자이너의 새로운 역할을 모색해 본다.",
+      "published_date": "2025-06-04",
+      "isbn": "9791143001436"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 43,
+    "fields": {
+      "title": "[큰글자책] AI 프롬프팅과 지식재산",
+      "author": "김원오 (지은이)",
+      "category": null,
+      "cover": "https://image.aladin.co.kr/product/36489/72/coversum/k152039110_1.jpg",
+      "summary": "프롬프트 기반 창작 시대를 맞아 AI 산출물의 법적 지위와 창작자 권리 문제를 분석한다. 저작권, 특허, 딥페이크 등 핵심 쟁점을 총망라해 창작과 규제의 새 기준을 제시한다.",
+      "published_date": "2025-06-04",
+      "isbn": "9791143002716"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 44,
+    "fields": {
+      "title": "[큰글자책] AI와 스타트업",
+      "author": "김주희 (지은이)",
+      "category": null,
+      "cover": "https://image.aladin.co.kr/product/36489/72/coversum/k182039110_1.jpg",
+      "summary": "AI는 스타트업의 창의성과 결합해 사회를 다시 설계하고 새로운 가치를 만든다. 혁신이 작동하는 구체적 장면을 AI와 스타트업의 결합 사례를 통해 보여 준다.",
+      "published_date": "2025-06-05",
+      "isbn": "9791143002310"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 45,
+    "fields": {
+      "title": "AI와 글로벌 비즈니스 문화",
+      "author": "황충연 (지은이)",
+      "category": null,
+      "cover": "https://image.aladin.co.kr/product/36489/72/coversum/k112039110_1.jpg",
+      "summary": "문화적 차이로 인한 실패를 AI로 극복하는 전략을 소개한다. 생성형 AI는 글로벌 비즈니스에서 문화적 민감성과 전략 실행을 동시에 강화하는 강력한 협력자다.",
+      "published_date": "2025-06-05",
+      "isbn": "9791143001498"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 46,
+    "fields": {
+      "title": "묻고 싶어 죽겠어요 - 어른들에게 묻지 못한 삶과 죽음에 관한 38가지 질문",
+      "author": "에옌 두티에, 아나 후안 칸타베야 (지은이), 안드레아 안티노리 (그림), 성소희 (옮긴이)",
+      "category": 62,
+      "cover": "https://image.aladin.co.kr/product/36489/73/coversum/k122039110_1.jpg",
+      "summary": "",
+      "published_date": "2025-05-30",
+      "isbn": "9791173476013"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 47,
+    "fields": {
+      "title": "[큰글자책] AI와 글로벌 비즈니스 문화",
+      "author": "황충연 (지은이)",
+      "category": null,
+      "cover": "https://image.aladin.co.kr/product/36489/74/coversum/k292039110_1.jpg",
+      "summary": "문화적 차이로 인한 실패를 AI로 극복하는 전략을 소개한다. 생성형 AI는 글로벌 비즈니스에서 문화적 민감성과 전략 실행을 동시에 강화하는 강력한 협력자다.",
+      "published_date": "2025-06-05",
+      "isbn": "9791143001504"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 48,
+    "fields": {
+      "title": "AI와 비판적 포스트휴머니즘",
+      "author": "박휴용 (지은이)",
+      "category": null,
+      "cover": "https://image.aladin.co.kr/product/36489/74/coversum/k202039110_1.jpg",
+      "summary": "인간과 기술, 생명과 인공지능의 경계를 다시 묻는다. AI와 공존하는 시대, 인간의 본질과 윤리는 어떻게 변화해야 하는가? 철학과 과학을 넘나드는 사유의 지도를 제시한다.",
+      "published_date": "2025-06-05",
+      "isbn": "9791143003898"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 49,
+    "fields": {
+      "title": "어른의 관계에는 마침표가 없다",
+      "author": "김재식 (지은이)",
+      "category": 64,
+      "cover": "https://image.aladin.co.kr/product/36489/74/coversum/k282039110_1.jpg",
+      "summary": "'모두에게 완벽히 좋은 사람일 수 없다'는 메시지로 큰 사랑을 받은 《좋은 사람에게만 좋은 사람이면 돼》 관계 후속편이 출간되었다. 김재식 작가는 이번 책에서, 관계의 단절이 일상화된 현대사회 속 고립된 삶의 무게를 감내하면서도 끝내 누군가의 연결을 꿈꾸는 인간의 본능적 소망을 울림 있게 전달한다.",
+      "published_date": "2025-05-30",
+      "isbn": "9791171714285"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 50,
+    "fields": {
+      "title": "[큰글자책] AI와 비판적 포스트휴머니즘",
+      "author": "박휴용 (지은이)",
+      "category": null,
+      "cover": "https://image.aladin.co.kr/product/36489/75/coversum/k232039110_1.jpg",
+      "summary": "인간과 기술, 생명과 인공지능의 경계를 다시 묻는다. AI와 공존하는 시대, 인간의 본질과 윤리는 어떻게 변화해야 하는가? 철학과 과학을 넘나드는 사유의 지도를 제시한다.",
+      "published_date": "2025-06-05",
+      "isbn": "9791143003904"
+    }
+  },
+{
+    "model": "books.book",
+    "pk": 51,
+    "fields": {
+      "title": "청춘의 독서 (특별증보판) - 세상을 바꾼 위험하고 위대한 생각들",
+      "author": "유시민 (지은이)",
+      "category": 79,
+      "cover": "https://image.aladin.co.kr/product/36286/32/coversum/s372039570_1.jpg",
+      "summary": "혼탁한 정국마다 명료한 통찰을 전하며 ‘신경안정제’ 역할을 해준 우리 시대의 지식인 유시민. 그의 대표작 중 하나로 2009년 처음 출간되어 오랜 시간 사랑받아온 『청춘의 독서』가 고급 양장 제본의 특별증보판으로 독자들과 새롭게 만난다.",
+      "published_date": "2025-04-30",
+      "isbn": "9788901294742"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 52,
+    "fields": {
+      "title": "어린이는 멀리 간다",
+      "author": "김지은 (지은이)",
+      "category": 62,
+      "cover": "https://image.aladin.co.kr/product/36256/59/coversum/8936448943_1.jpg",
+      "summary": "오랜 시간 빛나는 지성과 따스한 진심으로 어린이와 문학을 이야기해 온 김지은 평론가가 첫 번째 에세이 『어린이는 멀리 간다』를 펴낸다. 이 책은 김지은 평론가가 2020년부터 2023년까지 4년간 경향신문에 연재한 칼럼을 비롯해 다양한 지면을 통해 발표한 산문을 엄선해 묶었다.",
+      "published_date": "2025-05-23",
+      "isbn": "9788936448943"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 53,
+    "fields": {
+      "title": "단 한 번의 삶",
+      "author": "김영하 (지은이)",
+      "category": 64,
+      "cover": "https://image.aladin.co.kr/product/36114/12/coversum/s602038067_1.jpg",
+      "summary": "김영하가 산문 『단 한 번의 삶』을 출간했다. 60만 명이 넘는 독자의 사랑을 받은 『여행의 이유』 이후 6년 만에 선보이는 산문집으로, 유료 이메일 구독 서비스 '영하의 날씨'에 2024년 연재되었던 글을 대폭 수정하고 다듬어 묶었다. '영하의 날씨'는 초기 구독자의 초대로만 가입이 가능한 서비스로 화제를 모으며 연재 당시 뜨거운 호응을 얻었다.",
+      "published_date": "2025-04-06",
+      "isbn": "9791191114768"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 54,
+    "fields": {
+      "title": "혼모노",
+      "author": "성해나 (지은이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36101/66/coversum/893643974x_2.jpg",
+      "summary": "작품마다 치밀한 취재와 정교한 구성을 바탕으로 한 개성적인 캐릭터와 강렬하고도 서늘한 서사로 평단과 독자의 주목을 고루 받으며 새로운 세대의 리얼리즘을 열어가고 있다 평가받는 작가 성해나가 두번째 소설집 『혼모노』를 선보인다.",
+      "published_date": "2025-03-28",
+      "isbn": "9788936439743"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 55,
+    "fields": {
+      "title": "퀴어 디플로머시 - 국제 외교와 성소수자 인권",
+      "author": "더글러스 재노프 (지은이), 서정현 (옮긴이), 류민희 (감수)",
+      "category": 52,
+      "cover": "https://image.aladin.co.kr/product/36237/75/coversum/k952038712_2.jpg",
+      "summary": "성소수자 인권은 국제사회의 외교 무대에서 중요한 의제로 부상하고 있다. 이러한 흐름을 심층적으로 분석한 책인 『퀴어 디플로머시』는 캐나다 외교관인 저자의 외교 업무 수행 경험을 비롯해, 29명의 외교관, 인권 전문가, 유엔 관계자들과의 인터뷰 내용을 담고 있다.",
+      "published_date": "2025-05-26",
+      "isbn": "9791192455686"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 56,
+    "fields": {
+      "title": "어쩌다 좋은 일이 생길지도",
+      "author": "요시타케 신스케 (지은이), 고향옥 (옮긴이)",
+      "category": 62,
+      "cover": "https://image.aladin.co.kr/product/36281/68/coversum/k582038030_2.jpg",
+      "summary": "‘볼로냐 라가치상 특별상’, ‘일본 그림책 서점 대상’, ‘뉴욕 타임즈 최우수 그림책상’을 수상하며 전 세계에서 사랑받는 그림책 작가 요시타케 신스케의 신작으로, 마음이 지치고 힘들 때 소소하고 엉뚱한 행동을 하는 것만으로 우리 삶에 좋은 일이 생길 거라고 속삭여 주는 다정한 이야기다.",
+      "published_date": "2025-05-23",
+      "isbn": "9791173321771"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 57,
+    "fields": {
+      "title": "괴수 8호 15 (트리플 특장판) - 아크릴 일러스트 보드 + 아시로 미나 일러스트 카드 + 방위대 일러스트 카드",
+      "author": "마츠모토 나오야 (지은이), 유유리 (옮긴이)",
+      "category": 46,
+      "cover": "https://image.aladin.co.kr/product/36444/96/coversum/k692039499_1.jpg",
+      "summary": "어린 시절의 약속을 지켜, 아시로 미나의 옆에서 괴수 9호를 토벌하기 위해 움직이는 카프카. 격렬한 공방 중에 폭주 상태인 8호의 힘을 맞부딪쳐 9호의 실드를 깨고 핵을 꿰뚫자, 9호의 안에서 그 힘의 근원이 나타나는데…?!",
+      "published_date": "2025-05-29",
+      "isbn": "9791142801778"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 58,
+    "fields": {
+      "title": "빛과 실 - 2024 노벨문학상 수상 강연문 수록, 2024 노벨문학상 수상작가",
+      "author": "한강 (지은이)",
+      "category": 64,
+      "cover": "https://image.aladin.co.kr/product/36292/22/coversum/8932043566_1.jpg",
+      "summary": "“역사적 트라우마를 정면으로 마주하고 인간 삶의 연약함을 드러내는 강렬하고 시적인 산문”이라는 선정 이유와 함께 2024년 노벨문학상을 수상한 작가 한강의 신작 『빛과 실』(2025)이 문학과지성사 산문 시리즈 &lt;문지 에크리&gt;의 아홉번째 책으로 출간되었다.",
+      "published_date": "2025-04-18",
+      "isbn": "9788932043562"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 59,
+    "fields": {
+      "title": "엄마의 말 연습 - 화내지 않고 사랑하는 마음을 오롯이 전하는 39가지 존중어 수업",
+      "author": "윤지영 (지은이)",
+      "category": 93,
+      "cover": "https://image.aladin.co.kr/product/30147/78/coversum/k972839383_1.jpg",
+      "summary": "『초등 자존감 수업』을 쓴 윤지영 작가의 신작 『엄마의 말 연습』은 나도 모르는 사이에 마음에 없는 말을 내뱉고 후회하는 엄마들을 위한 책이다. 초등학교 교사이자 두 아이의 엄마인 윤지영 작가는 직접 아이들을 키우면서 경험한 시행착오를 바탕으로 아이들에게 상처 주는 말이 무엇인지, 반대로 아이들의 자존감을 키워주는 ‘존중의 말’은 무엇인지 연구하고 분석해 한 권의 책으로 정리했다.",
+      "published_date": "2022-09-22",
+      "isbn": "9791168270749"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 60,
+    "fields": {
+      "title": "길고양이와 늑대 5 (더블특전판) - 네컷 사진 + 빅 폴라로이드",
+      "author": "미츠바치 미유키 (지은이), 이슬 (옮긴이)",
+      "category": 46,
+      "cover": "https://image.aladin.co.kr/product/36451/84/coversum/k902039599_1.jpg",
+      "summary": "",
+      "published_date": "2025-05-22",
+      "isbn": "9791141134655"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 61,
+    "fields": {
+      "title": "언플러그드 보이 1 - 개정판",
+      "author": "천계영 (지은이)",
+      "category": 46,
+      "cover": "https://image.aladin.co.kr/product/36449/46/coversum/k562039494_1.jpg",
+      "summary": "힙합을 좋아하고 과감한 패션을 구사하는, 자유로운 소년 강현겸. 그는 소꿉친구인 채지율의 요구에 따라 매일 교문 앞에서 지율의 하교를 기다린다. 현겸이 학교에 나타나는 날이면 여학생들은 환호하며 그의 뒤꽁무니를 쫓곤 한다. 변성기도, 사춘기도 아직인 현겸을 보며 지율은 과연 현겸도 자신에게 이성으로서 호감을 느끼는지 불안해하는데...",
+      "published_date": "2025-05-23",
+      "isbn": "9791141608040"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 62,
+    "fields": {
+      "title": "소년이 온다 - 2024 노벨문학상 수상작가",
+      "author": "한강 (지은이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/4086/97/coversum/8936434128_2.jpg",
+      "summary": "섬세한 감수성과 치밀한 문장으로 인간 존재의 본질을 탐구해온 작가 한강의 여섯번째 장편소설. '상처의 구조에 대한 투시와 천착의 서사'를 통해 한강만이 풀어낼 수 있는 방식으로 1980년 5월을 새롭게 조명한다.",
+      "published_date": "2014-05-19",
+      "isbn": "9788936434120"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 63,
+    "fields": {
+      "title": "언플러그드 보이 2 - 개정판, 완결",
+      "author": "천계영 (지은이)",
+      "category": 46,
+      "cover": "https://image.aladin.co.kr/product/36449/48/coversum/k582039494_1.jpg",
+      "summary": "힙합을 좋아하고 과감한 패션을 구사하는, 자유로운 소년 강현겸. 그는 소꿉친구인 채지율의 요구에 따라 매일 교문 앞에서 지율의 하교를 기다린다. 현겸이 학교에 나타나는 날이면 여학생들은 환호하며 그의 뒤꽁무니를 쫓곤 한다. 변성기도, 사춘기도 아직인 현겸을 보며 지율은 과연 현겸도 자신에게 이성으로서 호감을 느끼는지 불안해하는데...",
+      "published_date": "2025-05-23",
+      "isbn": "9791141610289"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 64,
+    "fields": {
+      "title": "내게 남은 스물다섯 번의 계절",
+      "author": "슈테판 셰퍼 (지은이), 전은경 (옮긴이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36387/54/coversum/k702039674_1.jpg",
+      "summary": "평범한 비즈니스맨이자 두 아이의 아빠 ‘나’가 혼자 시골 별장에 내려갔다가 괴짜 농부 카를을 만나면서 펼쳐지는 아주 특별한 이틀을 담은 소설이다. 독일에서 출간되자마자 4주간 품절 사태를 일으키며 20만 부가 판매되었다.",
+      "published_date": "2025-05-16",
+      "isbn": "9791193904213"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 65,
+    "fields": {
+      "title": "이로운 보수 의로운 진보 - 최강 형제가 들려주는 최소한의 정치 교양",
+      "author": "최강욱, 최강혁 (지은이)",
+      "category": 52,
+      "cover": "https://image.aladin.co.kr/product/36292/90/coversum/k502038145_2.jpg",
+      "summary": "보수 성향의 ‘봉수 씨’와 진보 성향의 ‘진봉 씨’라는 50대 동갑내기 가상 인물이 등장한다. 이들의 대비되는 삶의 모습과 가치관은 보수와 진보의 세계관, 정치적 입장 차이를 극명하게 드러내 준다.",
+      "published_date": "2025-05-15",
+      "isbn": "9791172132477"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 66,
+    "fields": {
+      "title": "모순 - 개정판",
+      "author": "양귀자 (지은이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/2584/37/coversum/8998441012_3.jpg",
+      "summary": "작가 양귀자가 1998년 펴낸 세 번째 장편소설로, 책이 나온 지 한 달 만에 무서운 속도로 베스트셀러 1위에 진입, 출판계를 놀라게 하고 그해 최고의 베스트셀러로 자리 잡으면서 ‘양귀자 소설의 힘’을 다시 한 번 유감없이 보여준 소설이다.",
+      "published_date": "2013-04-01",
+      "isbn": "9788998441012"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 67,
+    "fields": {
+      "title": "최애의 아이 16 - 완결",
+      "author": "아카사카 아카 (지은이), 요코야리 멘고 (그림)",
+      "category": 46,
+      "cover": "https://image.aladin.co.kr/product/36465/39/coversum/k912039814_1.jpg",
+      "summary": "",
+      "published_date": "2025-05-30",
+      "isbn": "9791142316852"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 68,
+    "fields": {
+      "title": "최애의 아이 16 (특별판) - 초판한정 포토카드 + 호시노 아이 어나더 포토카드 + 루비&아쿠아 홀로그램 일러스트 카드 + 호시노 아이 홀로그램 아크릴보드, 완결",
+      "author": "아카사카 아카 (지은이), 요코야리 멘고 (그림)",
+      "category": 46,
+      "cover": "https://image.aladin.co.kr/product/36465/38/coversum/k822039813_1.jpg",
+      "summary": "",
+      "published_date": "2025-05-30",
+      "isbn": "9791142316869"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 69,
+    "fields": {
+      "title": "노예제와 사회적 죽음",
+      "author": "올랜도 패터슨 (지은이), 김혁, 류상윤 (옮긴이)",
+      "category": 52,
+      "cover": "https://image.aladin.co.kr/product/36138/51/coversum/8961474758_2.jpg",
+      "summary": "노예제 연구의 선구자이자 사회적 죽음 개념을 정립한 역사사회학의 거장 올랜도 패터슨(하버드대학교 존 카울즈 사회학 교수)이 노예제의 역사와 영향을 종합적으로 탐구해 독보적인 통찰을 제시한 혁신적 고전이다.",
+      "published_date": "2025-05-31",
+      "isbn": "9788961474757"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 70,
+    "fields": {
+      "title": "2025 제16회 젊은작가상 수상작품집",
+      "author": "백온유, 강보라, 서장원, 성해나, 성혜령, 이희주, 현호정 (지은이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36143/59/coversum/k742038673_1.jpg",
+      "summary": "한국문학의 새로운 미래를 함께하고자 2010년 제정된 젊은작가상이 올해로 어느덧 16회를 맞이했다. 데뷔 십 년 이내의 젊은 작가들이 한 해 동안 발표한 소설 가운데, 지금 여기에서 창발하는 문제의식을 가장 예리한 시선으로 포착해낸 작품에 주목하고자 한다.",
+      "published_date": "2025-04-02",
+      "isbn": "9791141602024"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 71,
+    "fields": {
+      "title": "봄의 폭풍과 몬스터 6",
+      "author": "미츠바치 미유키 (지은이)",
+      "category": 46,
+      "cover": "https://image.aladin.co.kr/product/36458/64/coversum/k702039714_1.jpg",
+      "summary": "",
+      "published_date": "2025-05-22",
+      "isbn": "9791141157944"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 72,
+    "fields": {
+      "title": "첫 여름, 완주",
+      "author": "김금희 (지은이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36275/58/coversum/k692038832_2.jpg",
+      "summary": "세심한 온정의 세계를 빚어내는 우리 시대의 작가 김금희의 장편소설. 돈을 갚지 않고 사라진 선배 고수미의 고향 완주 마을을 찾은 성우 손열매는 그곳에서 합동 장의사 겸 매점을 운영하는 수미 어머니의 집에 머물게 된다. 오갈 데 없는 처지에 목소리에까지 이상이 생긴 열매는 수미 어머니의 매점을 지키며 각양각색의 동네 사람들을 만난다.",
+      "published_date": "2025-05-08",
+      "isbn": "9791197221989"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 73,
+    "fields": {
+      "title": "위버멘쉬 - 누구의 시선도 아닌, 내 의지대로 살겠다는 선언",
+      "author": "프리드리히 니체 (지은이), 어나니머스 (옮긴이)",
+      "category": 79,
+      "cover": "https://image.aladin.co.kr/product/35902/54/coversum/k962037084_2.jpg",
+      "summary": "니체가 주장한 ‘초인(&#220;bermensch)’의 철학을 현대적으로 풀어낸 책이다. 위버멘쉬란 기존의 도덕과 사회적 관습을 그대로 따르는 대신, 자신의 의지로 새로운 가치를 창조하며 스스로의 삶을 개척하는 존재를 의미한다.",
+      "published_date": "2025-03-14",
+      "isbn": "9791192372730"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 74,
+    "fields": {
+      "title": "경험의 멸종 - 기술이 경험을 대체하는 시대, 인간은 계속 인간일 수 있을까",
+      "author": "크리스틴 로젠 (지은이), 이영래 (옮긴이)",
+      "category": 79,
+      "cover": "https://image.aladin.co.kr/product/36423/59/coversum/k912039194_1.jpg",
+      "summary": "문화 비평가이자 역사학자인 크리스틴 로젠은 《경험의 멸종》에서 경험이 소멸하는 21세기적 현상을 탐구하고 그 소멸이 갖는 의미를 철학적으로 분석한다. 대중문화, 과학, 정치, 법률 등 수많은 사례를 탐사하는 로젠의 작업은 인간의 조건이 되었던 경험들이 사라져가는 지금, 우리에게 이 흐름을 전복할 지적 근거를 제공한다.",
+      "published_date": "2025-05-20",
+      "isbn": "9791167742063"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 75,
+    "fields": {
+      "title": "고래눈이 내리다",
+      "author": "김보영 (지은이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36423/24/coversum/k162039192_1.jpg",
+      "summary": "한국 SF를 대표하는 작가 중 한 명이자 세계 독자에게 각별한 사랑을 받아온 소설가 김보영이 《얼마나 닮았는가》 이후로 5년 만에 신작 소설집을 펴냈다. 그간 초기작을 복원하고 기존 작품에 결말을 내는 등의 작업을 이어왔지만, 이 책은 대부분 2020년대에 발표한 작품들로 묶인 신작들이 담겨 독자들에게 반가움을 안긴다.",
+      "published_date": "2025-05-19",
+      "isbn": "9791168342880"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 76,
+    "fields": {
+      "title": "근대 괴물 사기극 (저자 친필 사인 수록) - 거짓말, 실수, 착각, 그리고 괴물 퇴치의 연대기",
+      "author": "이산화 (지은이), 최재훈 (일러스트)",
+      "category": 79,
+      "cover": "https://image.aladin.co.kr/product/36301/44/coversum/s522039810_1.jpg",
+      "summary": "2024년에 출간한 『미싱 스페이스 바닐라』에서 “과학적 엄밀성을 바탕으로 서로 다른 성격의 장르적 서사를 펼쳐내는 데 탁월하다”고 평가받은 이산화 작가가 이번에는 동서양 문헌 자료를 수년간 탐독하며 구상한 『근대 괴물 사기극』을 선보인다.",
+      "published_date": "2025-05-26",
+      "isbn": "9791191842876"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 77,
+    "fields": {
+      "title": "피를 마시는 새 바둑판 미니어처 세트 (출판 20주년 일러스트 특별 한정판, 양장) - 전4권 - 양장본 4권 + 페이퍼백 4권 + 슬립케이스 + &lt;피를 마시는 새&gt; 원목 바둑판 미니어처",
+      "author": "이영도 (지은이), 백성민 (그림)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36473/54/coversum/k452039915_1.jpg",
+      "summary": "하퍼 콜린스, 아셰트, 펭귄 랜덤하우스, 그루포 플라네타, 하야카와 등 세계 메이저 출판사들의 선택을 받으며 세계 17개 언어권 30여 개 나라에서 출간되었거나 출간 준비 중인 한국 판타지 문학의 전설 이영도 작가의 『눈물을 마시는 새』의 후속작 『피를 마시는 새』 일러스트 특별 한정판.",
+      "published_date": "2025-05-30",
+      "isbn": "9791170526216"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 78,
+    "fields": {
+      "title": "예술이라는 일 - 현대예술을 이끈 48인의 창작 노트",
+      "author": "애덤 모스 (지은이), 이승연 (옮긴이)",
+      "category": 67,
+      "cover": "https://image.aladin.co.kr/product/36292/14/coversum/k642038142_1.jpg",
+      "summary": "창작자의 영원한 질문에 답하기 위해 40년 경력의 세계적인 저널리스트이자 화가인 애덤 모스가 현대예술의 최전선에 자리한 48명의 예술가와 전방위적인 대화를 나눈다. 예술이라는 광활한 세계에서 새로운 역사를 써 내려가는 창작의 대가들이다.",
+      "published_date": "2025-05-30",
+      "isbn": "9791167742025"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 79,
+    "fields": {
+      "title": "초역 부처의 말 - 2500년 동안 사랑받은",
+      "author": "코이케 류노스케 (지은이), 박재현 (옮긴이)",
+      "category": 79,
+      "cover": "https://image.aladin.co.kr/product/33973/70/coversum/k682930444_1.jpg",
+      "summary": "2500년 동안 사람들에게 사랑받으며 회자되어 온 부처의 말을 코이케 류노스케 스님이 현대어로 재해석해 책으로 출간했다. 간결하게 축약된 핵심만을 담은 부처의 메시지는, 마음이 약해지고 어려움에 처한 사람들에게 힘과 용기를 불어넣어 준다.",
+      "published_date": "2024-05-30",
+      "isbn": "9791193506516"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 80,
+    "fields": {
+      "title": "얼굴만으론 좋아할 수 없어요 13",
+      "author": "안자이 카린 (지은이), 이소연 (옮긴이)",
+      "category": 46,
+      "cover": "https://image.aladin.co.kr/product/36466/24/coversum/k672039816_1.jpg",
+      "summary": "얼굴을 밝히는 여고생 사나는 최애 카나토 선배와 함께 학교 공식 계정 「운영자」로 활약 중. 연인이 된 후로 선배는 달콤한 데다 점점 더 공급 과다. 도이가키가 고백하며 「답은 필요없어」라고 했지만, 사나는 아무래도 신경이 쓰이는데…",
+      "published_date": "2025-05-23",
+      "isbn": "9791142802621"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 81,
+    "fields": {
+      "title": "행동은 불안을 이긴다 - 의지박약과 만성적 미루기에서 벗어나는 아주 작은 행동 설계",
+      "author": "롭 다이얼 (지은이), 박영준 (옮긴이)",
+      "category": 82,
+      "cover": "https://image.aladin.co.kr/product/36196/71/coversum/k362038594_1.jpg",
+      "summary": "아주 작은 행동 설계에 필요한 딱 두 가지의 핵심을 전한다. 존재하지 않는 공포와 불안에 속아 현실에 안주하는 마음을 버릴 것. 그리고 몸이 먼저 움직이는 행동 자동화 패턴을 익힐 것. 책에서 제시하는 방법들을 하나씩 완수하고, 몸으로 익힐 때 비로소 의지박약과 만성적 미루기에서 벗어나 행동하는 인생으로 나아갈 수 있을 것이다.",
+      "published_date": "2025-04-16",
+      "isbn": "9791193904152"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 82,
+    "fields": {
+      "title": "루리 드래곤 3",
+      "author": "신도 마사오키 (지은이), 이루다 (옮긴이)",
+      "category": 46,
+      "cover": "https://image.aladin.co.kr/product/36451/80/coversum/k852039598_1.jpg",
+      "summary": "운동회 실행위원이 된 루리와 마에다. 처음에는 서로 마음이 맞지 않았지만, 서서히 벽이 허물어져 가다 결국 ‘위원장’까지 맡게 되는데?! 익숙하지 않은 환경, 다시 주목받는 나날――. 그러던 중, 루리의 몸에 이변이 발생한다?!",
+      "published_date": "2025-05-21",
+      "isbn": "9791142802775"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 83,
+    "fields": {
+      "title": "결국 국민이 합니다 : 이재명의 인생과 정치철학",
+      "author": "이재명 (지은이)",
+      "category": 52,
+      "cover": "https://image.aladin.co.kr/product/36209/99/coversum/899778062x_1.jpg",
+      "summary": "2024년 12월 3일 ‘내란의 밤’부터 윤석열 대통령 탄핵소추안 가결, 2025년 4월 4일 헌재의 파면 선고까지 숨가빴던 순간들의 ‘막전막후’를 이재명의 시선으로 들여다본다.",
+      "published_date": "2025-04-15",
+      "isbn": "9788997780624"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 84,
+    "fields": {
+      "title": "흔한남매 19",
+      "author": "흔한남매 (지은이), 백난도 (글), 유난희 (그림), 흔한컴퍼니 (감수)",
+      "category": 62,
+      "cover": "https://image.aladin.co.kr/product/36208/50/coversum/k712038303_1.jpg",
+      "summary": "태권도를 배우는 으뜸이와 에이미, 흔식이와의 첫 만남, 씁아저씨 집에 놀러 간 흔한남매, 소파에서 오래 버티기 대결, 흔한 일상 속 공감 포인트, 공포의 학교 안내 방송, 엄마와 우리의 흔한 차이점 등 활기찬 흔한남매의 일상을 통해 스트레스를 날려 보자.",
+      "published_date": "2025-04-18",
+      "isbn": "9791173473968"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 85,
+    "fields": {
+      "title": "스토너",
+      "author": "존 윌리엄스 (지은이), 김승욱 (옮긴이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/5100/19/coversum/8925554992_2.jpg",
+      "summary": "내셔널 북 어워드 수상작가 존 윌리엄스의 장편소설. 2013년 영국 최대의 체인 서점인 '워터스톤' 올해의 책으로 선정된 도서이다. 1965년 미국에서 발표된 후, 오랜 시간 동안 독자들에게 잊힌 &lt;스토너&gt;는 유럽 출판계와 평론가, 독자들의 열렬한 반응을 이끌어내며 베스트셀러가 되었다.",
+      "published_date": "2015-01-02",
+      "isbn": "9788925554990"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 86,
+    "fields": {
+      "title": "에그박사 15 - 자연 생물 관찰 만화",
+      "author": "에그박사 (원작), 박송이 (글), 홍종현 (그림), 주세종 (감수)",
+      "category": 62,
+      "cover": "https://image.aladin.co.kr/product/36471/25/coversum/k032039912_1.jpg",
+      "summary": "인기 키즈 크리에이터 에그박사의 원작 영상을 생생한 관찰 스토리와 귀여운 생물 도감으로 재구성한 자연 생물 관찰 만화이다. 과학자, 철학가, 예술가의 눈으로 곤충의 삶을 관찰했던 프랑스의 곤충학자 파브르의《곤충기》처럼 에그박사의 눈으로 바라본 신비롭고 놀라운 자연 생물의 이야기가 가득하다.",
+      "published_date": "2025-05-29",
+      "isbn": "9791173476259"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 87,
+    "fields": {
+      "title": "살아 있는 것은 아름답다",
+      "author": "신경림 (지은이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36415/59/coversum/8936425188_1.jpg",
+      "summary": "2024년 5월 22일, 한국문학사에 위대한 발자취를 남긴 ‘작은 거인’ 고(故) 신경림 시인이 타계했다. 1956년 등단 이후 70년 가까운 세월 동안 세상에서 소외된 이들의 아픔을 어루만지며 그들과 함께 걸어온 시인은 생의 마지막 순간까지 펜을 놓지 않았다. 시인의 1주기를 맞아 출간되는 이번 시집은 생전 마지막으로 펴낸 『사진관집 이층』 이후 11년 만의 신작이다.",
+      "published_date": "2025-05-16",
+      "isbn": "9788936425180"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 88,
+    "fields": {
+      "title": "어른의 품격을 채우는 100일 필사 노트",
+      "author": "김종원 (지은이)",
+      "category": 82,
+      "cover": "https://image.aladin.co.kr/product/35809/29/coversum/k572036659_2.jpg",
+      "summary": "“마흔 이후 삶의 품격은 인생을 살아가는 태도에서 나온다” 120만 독자의 멘토 김종원 작가가 전하는 삶을 관통하는 조언과 위로의 문장들을 담은 책이다.",
+      "published_date": "2025-03-05",
+      "isbn": "9791193842287"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 89,
+    "fields": {
+      "title": "듀얼 브레인 - AI 시대의 실용적 생존 가이드",
+      "author": "이선 몰릭 (지은이), 신동숙 (옮긴이)",
+      "category": 82,
+      "cover": "https://image.aladin.co.kr/product/35873/90/coversum/k762037781_1.jpg",
+      "summary": "AI 시대를 살아가기 위해 꼭 읽어야 할 필독서다. 저자 이선 몰릭은 타임에서 선정한 ‘인공지능 분야에서 가장 영향력 있는 인물’ 중 한 명이다. 여러 AI 기업에 자문을 제공하고, 와튼 스쿨에서 교육에 AI 활용을 접목하는 등 다양한 영역에서 영향력을 발휘하고 있다. 그런 저자가 생성형 AI를 둘러싼 모든 것에 관한 최고의 책을 집필했다.",
+      "published_date": "2025-03-19",
+      "isbn": "9791194368175"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 90,
+    "fields": {
+      "title": "채식주의자 (리마스터판) - 2024 노벨문학상 수상작가",
+      "author": "한강 (지은이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/29137/2/coversum/8936434594_2.jpg",
+      "summary": "2016년 인터내셔널 부커상을 수상하며 한국문학의 입지를 한단계 확장시킨 한강의 장편소설. 상처받은 영혼의 고통과 식물적 상상력의 강렬한 결합을 정교한 구성과 흡인력 있는 문체로 보여주며 섬뜩한 아름다움의 미학을 한강만의 방식으로 완성한 역작이다.",
+      "published_date": "2022-03-28",
+      "isbn": "9788936434595"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 91,
+    "fields": {
+      "title": "피를 마시는 새 세트 (출판 20주년 일러스트 특별 한정판, 양장) - 전4권 - 양장본 4권 + 페이퍼백 4권 + 슬립케이스",
+      "author": "이영도 (지은이), 백성민 (그림)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36473/57/coversum/k552039915_1.jpg",
+      "summary": "하퍼 콜린스, 아셰트, 펭귄 랜덤하우스, 그루포 플라네타, 하야카와 등 세계 메이저 출판사들의 선택을 받으며 세계 17개 언어권 30여 개 나라에서 출간되었거나 출간 준비 중인 한국 판타지 문학의 전설 이영도 작가의 『눈물을 마시는 새』의 후속작 『피를 마시는 새』 일러스트 특별 한정판.",
+      "published_date": "2025-06-10",
+      "isbn": "9791170526131"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 92,
+    "fields": {
+      "title": "그녀를 지키다",
+      "author": "장바티스트 앙드레아 (지은이), 정혜용 (옮긴이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36072/76/coversum/8932924988_1.jpg",
+      "summary": "데뷔 이래 단 네권의 소설로 프랑스 주요 문학상 19개를 수상한 장 바티스트 앙드레아의 장편소설이다. 세계 3대 문학상인 공쿠르상을 수상한 이 작품은 수도원 지하에 유폐된 피에타 석상에 숨겨진 비밀을 석공 미모의 굴곡진 삶을 통해 풀어 가면서, 파시즘이 득세하던 당시 이탈리아의 풍경을 섬세하게 묘사하고 그 속에서 태생적 한계와 사회적 난관에도 꺾이지 않는 인간 영혼의 아름다움을 설득력 있게 보여준다.",
+      "published_date": "2025-03-20",
+      "isbn": "9788932924984"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 93,
+    "fields": {
+      "title": "창백한 지구를 위한 시",
+      "author": "이문재, 전동균, 주창윤, 정끝별, 나희덕, 문태준, 장철문, 손택수, 이재훈, 신혜정, 이혜미, 신미나, 김연덕, 정다연, 김창균, 김남극, 우은주, 권현형, 이동욱, 조온윤, 길상호, 권대웅 (지은이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36305/12/coversum/k592038440_2.jpg",
+      "summary": "이 시대의 시인들이 국내에서 처음으로 지구를 살리고 싶어하는 간절한 염원을 담은 신작시와 산문이 실려있다. 스물두 명의 시인이 전하는 시와 산문은 단순한 경고가 아니다. 그것은 우리가 지금 무엇을 해야 할지, 무엇을 포기해야 할지 묻는 강렬한 질문이다.",
+      "published_date": "2025-06-05",
+      "isbn": "9791162851715"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 94,
+    "fields": {
+      "title": "ETS 토익 정기시험 기출문제집 1000 Vol. 4 Reading (리딩) - 토익 기출문제 독점출간/ ALL NEW 최신기출 10회 수록/ 문제집+해설집+무료 동영상 강의+기출어휘 단어장(PDF)+APP 모바일 학습",
+      "author": "ETS (엮은이)",
+      "category": 70,
+      "cover": "https://image.aladin.co.kr/product/33010/94/coversum/8917239501_1.jpg",
+      "summary": "정기시험 최신 기출문제 10세트가 수록되어 있다. 시험에 나온 최신 기출문제로 실전 감각을 키워 시험에 확실하게 대비할 수 있다. 교재 내 QR코드는 해당 회차의 무료 동영상 강의로 연결된다. 오답률 높은 고난도 문항을 친절한 해설 강의와 함께 수록하였다.",
+      "published_date": "2023-12-18",
+      "isbn": "9788917239508"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 95,
+    "fields": {
+      "title": "급류",
+      "author": "정대건 (지은이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/30769/24/coversum/8937473402_1.jpg",
+      "summary": "2020년 《한경신춘문예》에 장편소설 &lt;GV 빌런 고태경&gt;이 당선되어 작품 활동을 시작한 소설가 정대건의 두 번째 장편소설 &lt;급류&gt;가 오늘의 젊은 작가 시리즈 40번으로 출간되었다. &lt;급류&gt;는 저수지와 계곡이 유명한 지방도시 ‘진평’을 배경으로, 열일곱 살 동갑내기인 ‘도담’과 ‘해솔’의 만남과 사랑을 그린 소설이다.",
+      "published_date": "2022-12-22",
+      "isbn": "9788937473401"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 96,
+    "fields": {
+      "title": "시든 꽃에 눈물을 1~2 세트 - 전2권 - 태하&해수 포토카드 2종 + '범태하' 일러스트 엽서 3종 + '민철&해수' 스티커 사진 1종 + 이모티콘 스티커 1종 + 작가 친필 사인 인쇄본",
+      "author": "개 (지은이)",
+      "category": 46,
+      "cover": "https://image.aladin.co.kr/product/36471/21/coversum/k842039911_1.jpg",
+      "summary": "남편 민철의 빚과 불륜으로 상처 입은 채 홀로 삶의 바닥까지 추락한 해수. 서류상 이혼 후에도 민철의 빚을 갚기 위해 꽃집과 고깃집을 오가며 힘들게 살아가던 그녀 앞에, 매일 장미꽃을 사러 오는 수상한 연하남 태하가 나타난다.",
+      "published_date": "2025-07-03",
+      "isbn": "9791143201133"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 97,
+    "fields": {
+      "title": "2025 선재국어 지방직 대비 최우선 실전 봉투 모의고사",
+      "author": "이선재 (지은이)",
+      "category": 57,
+      "cover": "https://image.aladin.co.kr/product/36123/60/coversum/k772038071_1.jpg",
+      "summary": "인사 혁신처 예시 문제의 철저한 분석을 바탕으로 하여, 변화하는 2025 공무원 시험 출제 기조를 완벽히 반영한 신유형 문제와, 실전과 똑같은 형태의 시험지+ OMR카드로 변화하는 2025 공무원 시험에 대비한 실전 훈련과 풀이 시간 단축에 최적화된 실전 모의고사다.",
+      "published_date": "2025-04-14",
+      "isbn": "9791190302357"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 98,
+    "fields": {
+      "title": "바움가트너",
+      "author": "폴 오스터 (지은이), 정영목 (옮긴이)",
+      "category": 55,
+      "cover": "https://image.aladin.co.kr/product/36236/28/coversum/8932925046_2.jpg",
+      "summary": "",
+      "published_date": "2025-04-30",
+      "isbn": "9788932925042"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 99,
+    "fields": {
+      "title": "딸을 위한 데일 카네기 인간관계론",
+      "author": "도나 데일 카네기 (지은이), 김지윤 (옮긴이)",
+      "category": 98,
+      "cover": "https://image.aladin.co.kr/product/36387/17/coversum/k532039673_2.jpg",
+      "summary": "전설적인 커뮤니케이션 멘토 데일 카네기의 철학을 바탕으로, 그의 친딸이자 데일카네기협회 이사장인 도나 데일 카네기가 오늘날의 십 대 여학생들이 학교와 가정 등 일상에서 적용할 수 있는 인간관계의 기술을 유쾌한 목소리로 풀어낸 책이다.",
+      "published_date": "2025-05-12",
+      "isbn": "9791130671093"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 100,
+    "fields": {
+      "title": "ETS 토익 정기시험 기출문제집 1000 Vol. 4 Listening (리스닝) - 토익 기출문제 독점출간/ ALL NEW 최신기출 10회 수록/ 문제집+해설집+무료 정기시험 성우 MP3+무료 동영상 강의+기출어휘 단어장(PDF)+APP 모바일 학습",
+      "author": "ETS (엮은이)",
+      "category": 70,
+      "cover": "https://image.aladin.co.kr/product/33010/92/coversum/8917239498_1.jpg",
+      "summary": "정기시험 최신 기출문제 10세트가 수록되어 있다. 시험에 나온 기출문제로 실전 감각을 키워 시험에 확실하게 대비하자! 수록된 10세트의 LC 음원은 모두 정기시험 성우의 음원이다. 시험장에서 듣게 될 음성으로 공부하면 까다로운 영국식, 호주식 발음도 걱정 없다.",
+      "published_date": "2023-12-18",
+      "isbn": "9788917239492"
+    }
+  }
+]
