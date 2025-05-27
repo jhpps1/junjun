@@ -1,69 +1,58 @@
 <template>
-  <section id="recommend" class="container py-5">
-    <h2 class="fw-bold">추천 도서</h2>
-    <div class="row mt-4">
-      <div class="col-md-5">
-        <div class="mb-3">
-          <h3 class="fw-bold">{{ books[0].title }}</h3>
-          <div class="mb-2 text-muted">{{ books[0].desc }}</div>
-        </div>
-        <div class="d-flex align-items-center justify-content-center bg-light" style="min-height:200px;">
-          <span>책 이미지</span>
+  <section class="mb-5">
+    <h2 class="fw-bold mb-4">추천 도서</h2>
+    <div class="row">
+      <!-- 왼쪽: 대표 추천 (이미지, 제목, 설명) -->
+      <div class="col-md-4">
+        <div class="border p-4 h-100 d-flex flex-column justify-content-center align-items-center">
+          <div style="width:100px; height:140px; background:#eee;">책 이미지</div>
+          <div class="fw-bold fs-4 mt-3">책 제목</div>
+          <div class="text-muted mt-2">책 설명만</div>
         </div>
       </div>
-      <div class="col-md-7">
-        <div
-          v-for="book in books"
-          :key="book.id"
-          class="mb-4"
-        >
-          <BookCard :book="book" />
+      <!-- 오른쪽: 추천 리스트 -->
+      <div class="col-md-8">
+        <div v-for="n in 3" :key="n" class="border rounded p-3 mb-3">
+          <div class="fw-bold">책 제목 <span class="badge bg-secondary ms-2">카테고리/색</span></div>
+          <div class="small text-muted">책 간략 설명</div>
+          <div class="d-flex gap-3 mt-2">
+            <button class="btn btn-outline-primary btn-sm">찜하기</button>
+            <button class="btn btn-outline-secondary btn-sm">이미 읽은 책</button>
+            <button class="btn btn-outline-dark btn-sm ms-auto">자세히</button>
+          </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+
 <script setup>
-import BookCard from '@/components/BookCard.vue'
-const books = [
-  {
-    id: 1,
-    title: '달의 영휴',
-    author: '작가A',
-    category: '에세이',
-    color: '#a3c1da',
-    desc: '감성적인 에세이 샘플입니다.',
-    comments: [
-      '정말 감동적이었어요!',
-      '표현력이 대단합니다.',
-      '이 책 덕분에 마음이 따뜻해졌어요.'
+import { ref, onMounted } from 'vue'
+import axios from 'axios'
+
+const recommends = ref([])       // 오른쪽 추천 3칸 데이터
+const selectedBook = ref(null)   // 왼쪽에 보여줄 책
+
+// 최초 마운트 시 백엔드 API에서 추천 데이터 받아오기
+onMounted(async () => {
+  try {
+    const res = await axios.get('/api/books/recommend_color/?user_id=1')  // user_id 동적(로그인 연동)
+    recommends.value = [
+      { type: '비슷한 색', book: res.data.similar },
+      { type: '가장 다른 색', book: res.data.different },
+      { type: '랜덤', book: res.data.random }
     ]
-  },
-  {
-    id: 2,
-    title: '마음의 과학',
-    author: '작가B',
-    category: '심리',
-    color: '#f8b195',
-    desc: '심리학적 통찰을 담은 책입니다.',
-    comments: [
-      '쉽게 설명해서 좋았어요.',
-      '추천 도서로 딱!',
-      '심리학에 처음 입문하는 분께 추천.'
-    ]
-  },
-  {
-    id: 3,
-    title: '코딩, 너의 의미',
-    author: '작가C',
-    category: 'IT',
-    color: '#6dcff6',
-    desc: 'IT 입문자를 위한 감성 도서.',
-    comments: [
-      '개발자에게 정말 추천!',
-      '책이 따뜻한 느낌이에요.',
-      '실용적이면서 감성적인 책.'
-    ]
+    selectedBook.value = null
+  } catch (err) {
+    console.error('추천 API 실패:', err)
+    recommends.value = []
+    selectedBook.value = null
   }
-]
+})
+
+// 오른쪽 추천 카드 클릭 시 왼쪽에 정보 표시
+function selectBook(idx) {
+  selectedBook.value = recommends.value[idx].book
+}
 </script>

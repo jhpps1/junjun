@@ -1,37 +1,23 @@
 <template>
-  <section id="popular" class="container py-5 border-bottom">
-    <h2 class="mb-4 fw-bold">인기도서</h2>
-
-    <!-- 1. 로딩 중 -->
-    <div v-if="loading" class="text-center my-5">로딩중...</div>
-    <!-- 2. 데이터 없음 -->
-    <div v-else-if="books.length === 0" class="text-center my-5 text-secondary">
-      인기도서 데이터가 없습니다.
-    </div>
-    <!-- 3. 정상 데이터 -->
-    <div v-else class="position-relative">
-      <div class="d-flex overflow-hidden" style="height: 240px;">
-        <div
-          class="d-flex transition"
-          :style="{
-            transform: `translateX(-${currentIdx * (100 / showCount)}%)`,
-            transition: 'transform 0.6s cubic-bezier(.6,.18,.38,.96)'
-          }"
-          style="min-width:100%;"
-        >
-          <div
-            v-for="(book, idx) in visibleBooks"
-            :key="book?.id || idx"
-            class="flex-shrink-0 px-2"
-            style="width: 260px; min-width:260px;"
-          >
-            <BookCard v-if="book" :book="book" />
-          </div>
+  <section class="mb-5">
+    <h2 class="fw-bold mb-4">인기도서</h2>
+    <div class="d-flex align-items-center">
+      <button class="btn btn-outline-secondary me-2">&#8592;</button>
+      <div class="flex-grow-1 d-flex justify-content-between">
+        <div v-for="n in 4" :key="n" class="card mx-1 p-3 text-center" style="width: 200px;">
+          <div class="mb-2">[책 아이콘]</div>
+          <div>작가</div>
+          <div class="fw-bold">책이름</div>
+          <div>100%</div>
+          <div class="small text-muted mt-2">댓글 세로 캐러셀</div>
         </div>
       </div>
+      <button class="btn btn-outline-secondary ms-2">&#8594;</button>
     </div>
+    <button class="btn btn-outline-dark mt-3">더보기 ...</button>
   </section>
 </template>
+
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'

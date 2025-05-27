@@ -8,6 +8,7 @@ from .serializers import CategorySerializer, BookSerializer, UserBookRelationSer
 from .utils import hex_to_rgb, color_distance
 from accounts.models import User
 from django.db.models import Count, Q
+from .signals import get_similar_color_category, get_diff_color_category, get_random_category
 
 # ===== 카테고리 목록 조회 =====
 class CategoryViewSet(viewsets.ReadOnlyModelViewSet):
@@ -122,3 +123,23 @@ def popular_books(request):
     # 3. 직렬화 및 응답
     serializer = BookSerializer(books, many=True)
     return Response(serializer.data)
+
+@api_view(['GET'])
+def recommend_books_by_color(request, user_id):
+    # 예: user_id로 사용자 색상정보 조회
+    my_color = ... # 유저 색상값
+
+    sim_cat = get_similar_color_category(my_color)
+    diff_cat = get_diff_color_category(my_color)
+    rand_cat = get_random_category()
+
+    # 각 카테고리 대표책 선정
+    sim_book = Book.objects.filter(category=sim_cat).order_by('?').first()
+    diff_book = Book.objects.filter(category=diff_cat).order_by('?').first()
+    rand_book = Book.objects.filter(category=rand_cat).order_by('?').first()
+
+    return Response({
+        "similar": BookSerializer(sim_book).data if sim_book else None,
+        "different": BookSerializer(diff_book).data if diff_book else None,
+        "random": BookSerializer(rand_book).data if rand_book else None,
+    })
