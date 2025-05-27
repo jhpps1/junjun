@@ -8,8 +8,8 @@ ENDPOINT = 'http://www.aladin.co.kr/ttb/api/ItemList.aspx'
 # API 요청 파라미터 설정
 params = {
     'ttbkey': API_KEY,
-    'QueryType': 'Bestseller',
-    'MaxResults': 30,
+    'QueryType': 'ItemNewAll',
+    'MaxResults': 50,
     'start': 1,
     'SearchTarget': 'Book',
     'Output': 'js',
@@ -26,12 +26,10 @@ for item in data.get('item', []):
     book = {
         'title': item.get('title'),
         'author': item.get('author'),
-        'publisher': item.get('publisher'),
         'pubDate': item.get('pubDate'),
         'isbn13': item.get('isbn13'),
         'description': item.get('description'),
         'categoryId': item.get('categoryId'),
-        'categoryName': item.get('categoryName'),
         'cover': item.get('cover')
     }
     bestsellers.append(book)
