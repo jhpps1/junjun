@@ -10,6 +10,7 @@ from accounts.models import User
 from django.db.models import Count, Q
 from .signals import get_similar_color_category, get_diff_color_category, get_random_category
 
+
 # ===== 카테고리 목록 조회 =====
 class CategoryViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Category.objects.all()
@@ -126,14 +127,15 @@ def popular_books(request):
 
 @api_view(['GET'])
 def recommend_books_by_color(request, user_id):
-    # 예: user_id로 사용자 색상정보 조회
-    my_color = ... # 유저 색상값
+    user = User.objects.filter(pk=user_id).first()
+    if not user or not user.profile_color:
+        return Response({'error': 'User not found or no profile_color'}, status=404)
+    my_color = user.profile_color  # ★ 필드명 반드시 profile_color로! ★
 
     sim_cat = get_similar_color_category(my_color)
     diff_cat = get_diff_color_category(my_color)
     rand_cat = get_random_category()
 
-    # 각 카테고리 대표책 선정
     sim_book = Book.objects.filter(category=sim_cat).order_by('?').first()
     diff_book = Book.objects.filter(category=diff_cat).order_by('?').first()
     rand_book = Book.objects.filter(category=rand_cat).order_by('?').first()

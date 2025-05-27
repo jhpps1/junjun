@@ -1,33 +1,40 @@
 <template>
-  <div class="modal-backdrop show" style="z-index: 1040;"></div>
-  <div class="modal d-block" tabindex="-1" style="z-index: 1050;">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">회원가입</h5>
+  <div
+    class="modal fade show"
+    tabindex="-1"
+    style="display: block; background: rgba(0,0,0,0.25);"
+    @click.self="$emit('close')"
+  >
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 400px;">
+      <div class="modal-content rounded-4 shadow-lg border-0">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold">회원가입</h5>
           <button type="button" class="btn-close" @click="$emit('close')"></button>
         </div>
         <div class="modal-body">
-          <form @submit.prevent="onRegister">
+          <form @submit.prevent="register">
             <div class="mb-3">
-              <label class="form-label">아이디</label>
-              <input v-model="username" type="text" class="form-control" required />
+              <input v-model="username" class="form-control" placeholder="아이디" required />
             </div>
             <div class="mb-3">
-              <label class="form-label">비밀번호</label>
-              <input v-model="password" type="password" class="form-control" required />
+              <input v-model="password" type="password" class="form-control" placeholder="비밀번호" required />
             </div>
             <div class="mb-3">
-              <label class="form-label">비밀번호 확인</label>
-              <input v-model="password2" type="password" class="form-control" required />
+              <label class="form-label">관심 카테고리 (3개 선택)</label>
+              <select v-model="favoriteCategories" class="form-select" multiple required>
+                <option v-for="cat in categories" :key="cat.id" :value="cat.id">
+                  {{ cat.name }}
+                </option>
+              </select>
+              <div class="form-text">3개만 선택해야 합니다.</div>
             </div>
-            <button type="submit" class="btn btn-success w-100">회원가입</button>
+            <button type="submit" class="btn btn-dark w-100 rounded-3 py-2 fw-bold">
+              회원가입
+            </button>
           </form>
-          <div v-if="error" class="alert alert-danger mt-3">{{ error }}</div>
-        </div>
-        <div class="modal-footer justify-content-between">
-          <button class="btn btn-link" @click="$emit('switch-login')">로그인</button>
-          <button class="btn btn-secondary" @click="$emit('close')">닫기</button>
+          <div class="d-flex justify-content-end align-items-center mt-3">
+            <button class="btn btn-secondary btn-sm" @click="$emit('close')">닫기</button>
+          </div>
         </div>
       </div>
     </div>
@@ -35,37 +42,34 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import axios from 'axios'
+import { ref, onMounted } from 'vue'
+import api from '@/api/auth'
 
-const username = ref('')
-const password = ref('')
-const password2 = ref('')
-const error = ref('')
+const username = ref("")
+const password = ref("")
+const favoriteCategories = ref([])
+const categories = ref([])
 
-const emit = defineEmits(['close', 'switch-login'])
+onMounted(async () => {
+  const res = await api.get('/categories/')
+  categories.value = res.data
+})
 
-async function onRegister() {
-  error.value = ''
-  if (password.value !== password2.value) {
-    error.value = '비밀번호가 일치하지 않습니다.'
+const register = async () => {
+  if (favoriteCategories.value.length !== 3) {
+    alert("카테고리 3개만 선택하세요!")
     return
   }
   try {
-    await axios.post('http://localhost:8000/api/accounts/register/', {
+    await api.post('/accounts/register/', {
       username: username.value,
       password: password.value,
-    }, { withCredentials: true }) // 쿠키 전송 허용
-    error.value = ''           // ✅ 에러 메시지 꼭 초기화
-    alert('회원가입 성공! 로그인 해주세요.')
-    // 폼 입력값 초기화(선택)
-    username.value = ''
-    password.value = ''
-    password2.value = ''
-    // 로그인 모달로 전환
-    emit('switch-login')
-  } catch (err) {
-    error.value = err.response?.data?.detail || '회원가입 실패'
+      favorite_categories: favoriteCategories.value
+    })
+    alert("회원가입 완료!")
+    window.location.reload()
+  } catch (error) {
+    alert(error.response?.data?.detail || error.message)
   }
 }
 </script>

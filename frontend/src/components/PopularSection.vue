@@ -2,7 +2,6 @@
   <section class="container py-5">
     <div class="d-flex justify-content-between align-items-center mb-4">
       <h2 class="fw-bold mb-0">인기 도서</h2>
-      <span class="fs-5 text-success fw-bold">+100%</span>
     </div>
     <div id="popularBooksCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -30,7 +29,6 @@
                 <div class="card-footer bg-white border-top-0 pt-2 pb-2">
                   <div class="d-flex justify-content-between align-items-center">
                     <span class="small">댓글 {{ book.comments_count ?? 0 }}</span>
-                    <span class="small text-secondary">평점 {{ book.rating ?? '-' }}</span>
                   </div>
                 </div>
               </div>
@@ -52,7 +50,7 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue'
 // fetchPopularBooks 함수는 기존 api.js 또는 axios 파일에서 import
-import { fetchPopularBooks } from '@/api/api' // 실제 경로에 맞게 수정
+import { fetchPopularBooks } from '@/api/book' // 실제 경로에 맞게 수정
 
 const books = ref([])
 

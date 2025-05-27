@@ -1,29 +1,34 @@
 <template>
-  <div class="modal-backdrop show" style="z-index: 1040;"></div>
-  <div class="modal d-block" tabindex="-1" style="z-index: 1050;">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">로그인</h5>
+  <div
+    class="modal fade show"
+    tabindex="-1"
+    style="display: block; background: rgba(0,0,0,0.25);"
+    @click.self="$emit('close')"
+  >
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 400px;">
+      <div class="modal-content rounded-4 shadow-lg border-0">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold">로그인</h5>
           <button type="button" class="btn-close" @click="$emit('close')"></button>
         </div>
         <div class="modal-body">
-          <form @submit.prevent="onLogin">
+          <form @submit.prevent="login">
             <div class="mb-3">
-              <label class="form-label">아이디</label>
-              <input v-model="username" type="text" class="form-control" required />
+              <input v-model="username" class="form-control" placeholder="아이디" required />
             </div>
             <div class="mb-3">
-              <label class="form-label">비밀번호</label>
-              <input v-model="password" type="password" class="form-control" required />
+              <input v-model="password" type="password" class="form-control" placeholder="비밀번호" required />
             </div>
-            <button type="submit" class="btn btn-primary w-100">로그인</button>
+            <button type="submit" class="btn btn-dark w-100 rounded-3 py-2 fw-bold">
+              로그인
+            </button>
           </form>
-          <div v-if="error" class="alert alert-danger mt-3">{{ error }}</div>
-        </div>
-        <div class="modal-footer justify-content-between">
-          <button class="btn btn-link" @click="$emit('switch-register')">회원가입</button>
-          <button class="btn btn-secondary" @click="$emit('close')">닫기</button>
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <a href="#" class="link-primary small" @click.prevent="$emit('switch-register')">
+              회원가입
+            </a>
+            <button class="btn btn-secondary btn-sm" @click="$emit('close')">닫기</button>
+          </div>
         </div>
       </div>
     </div>
@@ -32,21 +37,19 @@
 
 <script setup>
 import { ref } from 'vue'
-import { useUserStore } from '@/store/user'
-const username = ref('')
-const password = ref('')
-const error = ref('')
+import { useUserStore } from '../store/user'
+
+const username = ref("")
+const password = ref("")
 const userStore = useUserStore()
 
-const emit = defineEmits(['close', 'switch-register'])
-
-async function onLogin() {
-  await userStore.login(username.value, password.value)
-  if (userStore.isLoggedIn) {
-    error.value = ''
-    emit('close')    
-  } else {
-    error.value = userStore.error
+const login = async () => {
+  try {
+    await userStore.login(username.value, password.value)
+    // 로그인 성공 → 모달 닫기 + 네비바 등 자동 반영
+    window.location.reload() // 새로고침 시 세션 상태 완벽 반영!
+  } catch (error) {
+    alert(error.response?.data?.detail || error.message)
   }
 }
 </script>
